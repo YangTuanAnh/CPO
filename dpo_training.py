@@ -235,6 +235,30 @@ if __name__ == "__main__":
     warmup_steps = round(0.1*len(train_dataset)/(4*bs))
     if warmup_steps < 10:
         warmup_steps = 10
+    
+    # Calculate steps to ensure compatibility
+    total_steps = round(len(train_dataset)/(4*bs))*3
+    eval_steps = script_args.eval_steps
+    save_steps = round(len(train_dataset)/(4*bs)*0.5)
+    
+    # Ensure save_steps is a multiple of eval_steps
+    if save_steps % eval_steps != 0:
+        save_steps = ((save_steps // eval_steps) + 1) * eval_steps
+    
+    # Ensure save_steps doesn't exceed total_steps
+    if save_steps > total_steps:
+        save_steps = total_steps
+        # If we can't save during training, disable load_best_model_at_end
+        load_best_model_at_end = False
+    else:
+        load_best_model_at_end = True
+    
+    print(f"Training steps: {total_steps}")
+    print(f"Evaluation steps: {eval_steps}")
+    print(f"Save steps: {save_steps}")
+    print(f"Load best model at end: {load_best_model_at_end}")
+    print(f"Save steps is multiple of eval steps: {save_steps % eval_steps == 0}")
+    
     # 3. Load evaluation dataset
     print('====Load evaluation dataset====')
     eval_dataset = dataset['test']
@@ -246,16 +270,14 @@ if __name__ == "__main__":
         output_dir=args.output_dir,
         per_device_train_batch_size=script_args.per_device_train_batch_size,
         per_device_eval_batch_size=script_args.per_device_eval_batch_size,
-        # max_steps=script_args.max_steps,
-        max_steps=round(len(train_dataset)/(4*bs))*3,
+        max_steps=total_steps,
         logging_steps=script_args.logging_steps,
-        # save_steps=script_args.save_steps,
-        save_steps=round(len(train_dataset)/(4*bs)*0.5),
+        save_steps=save_steps,
         gradient_accumulation_steps=script_args.gradient_accumulation_steps,
         gradient_checkpointing=script_args.gradient_checkpointing,
         learning_rate=script_args.learning_rate,
         eval_strategy="steps",
-        eval_steps=script_args.eval_steps,
+        eval_steps=eval_steps,
         report_to=script_args.report_to,
         lr_scheduler_type=script_args.lr_scheduler_type,
         warmup_steps=warmup_steps,
@@ -271,7 +293,7 @@ if __name__ == "__main__":
         logging_strategy="steps",
         save_strategy="steps",
         save_total_limit=2,
-        load_best_model_at_end=True,
+        load_best_model_at_end=load_best_model_at_end,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
     )
