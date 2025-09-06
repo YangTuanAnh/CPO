@@ -254,7 +254,7 @@ if __name__ == "__main__":
         gradient_accumulation_steps=script_args.gradient_accumulation_steps,
         gradient_checkpointing=script_args.gradient_checkpointing,
         learning_rate=script_args.learning_rate,
-        evaluation_strategy="steps",
+        eval_strategy="steps",
         eval_steps=script_args.eval_steps,
         report_to=script_args.report_to,
         lr_scheduler_type=script_args.lr_scheduler_type,
