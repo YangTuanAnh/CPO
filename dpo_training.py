@@ -5,9 +5,9 @@ from typing import Dict, Optional
 import torch
 from datasets import Dataset, load_dataset
 from peft import LoraConfig
-from transformers import AutoModelForCausalLM, AutoTokenizer, HfArgumentParser, TrainingArguments
+from transformers import AutoModelForCausalLM, AutoTokenizer, HfArgumentParser
 
-from trl import DPOTrainer
+from trl import DPOTrainer, DPOConfig
 import argparse
 import json
 # Define and parse arguments.
@@ -100,6 +100,29 @@ class ScriptArguments:
     )
 
 
+def validate_dataset_format(dataset: Dataset) -> bool:
+    """Validate that the dataset has the required format for DPO training"""
+    required_columns = ['prompt', 'chosen', 'rejected']
+    
+    if not all(col in dataset.column_names for col in required_columns):
+        print(f"Error: Dataset missing required columns. Found: {dataset.column_names}")
+        print(f"Required: {required_columns}")
+        return False
+    
+    # Check for empty samples
+    empty_samples = 0
+    for i, sample in enumerate(dataset):
+        if not sample['prompt'].strip() or not sample['chosen'].strip() or not sample['rejected'].strip():
+            empty_samples += 1
+            if empty_samples <= 5:  # Show first 5 empty samples
+                print(f"Warning: Empty sample at index {i}: {sample}")
+    
+    if empty_samples > 0:
+        print(f"Warning: Found {empty_samples} empty samples in dataset")
+    
+    print(f"Dataset validation passed. Found {len(dataset)} samples.")
+    return True
+
 def get_stack_exchange_paired(
     data_dir: str = "data/rl",
     sanity_check: bool = False,
@@ -154,6 +177,7 @@ if __name__ == "__main__":
         args.base_model,
         low_cpu_mem_usage=True,
         torch_dtype=torch.bfloat16,
+        device_map="auto" if torch.cuda.is_available() else None,
         # load_in_4bit=True,
     )
 
@@ -166,12 +190,14 @@ if __name__ == "__main__":
         ]
 
     tokenizer = AutoTokenizer.from_pretrained(args.base_model)
-    tokenizer.pad_token = tokenizer.eos_token
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = "left"  # Important for DPO training
 
     # 2. Load the Stack-exchange paired dataset
     print('====Load the Stack-exchange paired dataset====')
     ori_dataset = []
-    if args.mixed == False:
+    if not args.mixed:
         with open(args.dataset, 'r') as f:
             ori_dataset.extend(json.load(f))
           
@@ -197,6 +223,13 @@ if __name__ == "__main__":
     data_dict = {key: [item[key] for item in ori_dataset] for key in ori_dataset[0]}
     # 创建datasets.Dataset对象
     dataset = Dataset.from_dict(data_dict)
+    
+    # Validate dataset format
+    print('====Validate dataset format====')
+    if not validate_dataset_format(dataset):
+        print("Error: Dataset validation failed. Exiting.")
+        exit(1)
+    
     dataset = dataset.train_test_split(test_size=0.1)
     train_dataset = dataset['train']
     warmup_steps = round(0.1*len(train_dataset)/(4*bs))
@@ -204,12 +237,13 @@ if __name__ == "__main__":
         warmup_steps = 10
     # 3. Load evaluation dataset
     print('====Load evaluation dataset====')
-    eval_dataset =dataset['test']
+    eval_dataset = dataset['test']
 
 
-    # 4. initialize training arguments:
-    print('====initialize training arguments:====')
-    training_args = TrainingArguments(
+    # 4. initialize DPO training arguments:
+    print('====initialize DPO training arguments:====')
+    dpo_config = DPOConfig(
+        output_dir=args.output_dir,
         per_device_train_batch_size=script_args.per_device_train_batch_size,
         per_device_eval_batch_size=script_args.per_device_eval_batch_size,
         # max_steps=script_args.max_steps,
@@ -220,9 +254,8 @@ if __name__ == "__main__":
         gradient_accumulation_steps=script_args.gradient_accumulation_steps,
         gradient_checkpointing=script_args.gradient_checkpointing,
         learning_rate=script_args.learning_rate,
-        eval_strategy="steps",
+        evaluation_strategy="steps",
         eval_steps=script_args.eval_steps,
-        output_dir=args.output_dir,
         report_to=script_args.report_to,
         lr_scheduler_type=script_args.lr_scheduler_type,
         warmup_steps=warmup_steps,
@@ -230,6 +263,17 @@ if __name__ == "__main__":
         bf16=True,
         remove_unused_columns=False,
         run_name=args.wandb_name,
+        # DPO-specific parameters
+        beta=script_args.beta,
+        max_prompt_length=script_args.max_prompt_length,
+        max_length=script_args.max_length,
+        logging_first_step=True,
+        logging_strategy="steps",
+        save_strategy="steps",
+        save_total_limit=2,
+        load_best_model_at_end=True,
+        metric_for_best_model="eval_loss",
+        greater_is_better=False,
     )
 
     peft_config = LoraConfig(
@@ -252,24 +296,30 @@ if __name__ == "__main__":
     # 5. initialize the DPO trainer
     print('====initialize the DPO trainer====')
     dpo_trainer = DPOTrainer(
-        model,
-        None,
-        args=training_args,
-        beta=script_args.beta,
+        model=model,
+        args=dpo_config,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
         tokenizer=tokenizer,
         peft_config=peft_config,
-        max_prompt_length=script_args.max_prompt_length,
-        max_length=script_args.max_length,
     )
 
     # 6. train
     print('====train====')
-    dpo_trainer.train()
-    dpo_trainer.save_model(script_args.output_dir)
-
+    try:
+        dpo_trainer.train()
+        print("Training completed successfully!")
+    except Exception as e:
+        print(f"Error during training: {e}")
+        raise e
+    
     # 7. save
     print('====save====')
-    output_dir = os.path.join(script_args.output_dir, "final_checkpoint")
-    dpo_trainer.model.save_pretrained(output_dir)
+    try:
+        dpo_trainer.save_model(script_args.output_dir)
+        output_dir = os.path.join(script_args.output_dir, "final_checkpoint")
+        dpo_trainer.model.save_pretrained(output_dir)
+        print(f"Model saved to {output_dir}")
+    except Exception as e:
+        print(f"Error during saving: {e}")
+        raise e
