@@ -1,31 +1,118 @@
-import os
 import json
 import argparse
 import torch 
 import sys
-import random
 from tot.tasks import get_task
 from tot.methods.bfs_test import solve, naive_solve
 # from tot.models import gpt_usage
 import warnings
-import csv
-import transformers
 from peft import PeftModel, LoraConfig
-from transformers import GenerationConfig, AutoModel, AutoModelForCausalLM, LlamaForCausalLM, AutoTokenizer, TrainingArguments, BitsAndBytesConfig, LlamaTokenizer
-from trl import PPOTrainer, PPOConfig, AutoModelForCausalLMWithValueHead, create_reference_model
-from trl.core import respond_to_batch
+from transformers import AutoModelForCausalLM, LlamaForCausalLM, AutoTokenizer, LlamaTokenizer
 from accelerate import Accelerator
-from accelerate.state import AcceleratorState
 # import tensor_parallel as tp
 import pandas as pd
 from load_data import *
 from datasets import load_dataset
 # from vllm import LLM
 import torch.distributed as dist
-import time
 
 
 warnings.filterwarnings("ignore")
+
+def test_cpo_preference_accuracy(model, tokenizer, test_data, num_samples=100, temperature=0.7):
+    """
+    Test CPO model on preference pairs to measure alignment accuracy
+    """
+    model.eval()
+    correct_predictions = 0
+    total_predictions = 0
+    results = []
+    
+    # Limit number of samples for testing
+    test_samples = test_data[:num_samples]
+    
+    print(f"Testing CPO model on {len(test_samples)} preference pairs...")
+    
+    for i, sample in enumerate(test_samples):
+        try:
+            prompt = sample['prompt']
+            chosen = sample['chosen']
+            rejected = sample['rejected']
+            
+            # Generate response for the prompt
+            inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512)
+            if torch.cuda.is_available():
+                inputs = {k: v.cuda() for k, v in inputs.items()}
+            
+            with torch.no_grad():
+                outputs = model.generate(
+                    **inputs,
+                    max_new_tokens=256,
+                    temperature=temperature,
+                    do_sample=True,
+                    pad_token_id=tokenizer.eos_token_id,
+                    eos_token_id=tokenizer.eos_token_id,
+                )
+            
+            generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # Remove the prompt from generated text
+            generated_response = generated_text[len(prompt):].strip()
+            
+            # Simple similarity-based preference prediction
+            # In practice, you might want to use a more sophisticated method
+            chosen_similarity = calculate_similarity(generated_response, chosen)
+            rejected_similarity = calculate_similarity(generated_response, rejected)
+            
+            # Predict chosen if similarity is higher
+            predicted_chosen = chosen_similarity > rejected_similarity
+            is_correct = predicted_chosen  # We expect the model to prefer the chosen response
+            
+            if is_correct:
+                correct_predictions += 1
+            total_predictions += 1
+            
+            results.append({
+                'sample_id': i,
+                'prompt': prompt,
+                'generated': generated_response,
+                'chosen': chosen,
+                'rejected': rejected,
+                'chosen_similarity': chosen_similarity,
+                'rejected_similarity': rejected_similarity,
+                'predicted_chosen': predicted_chosen,
+                'correct': is_correct
+            })
+            
+            if (i + 1) % 10 == 0:
+                print(f"Processed {i + 1}/{len(test_samples)} samples. Current accuracy: {correct_predictions/total_predictions:.3f}")
+                
+        except Exception as e:
+            print(f"Error processing sample {i}: {e}")
+            continue
+    
+    accuracy = correct_predictions / total_predictions if total_predictions > 0 else 0
+    print(f"CPO Preference Accuracy: {accuracy:.3f} ({correct_predictions}/{total_predictions})")
+    
+    return accuracy, results
+
+def calculate_similarity(text1, text2):
+    """
+    Calculate simple similarity between two texts
+    In practice, you might want to use more sophisticated metrics
+    """
+    # Simple word overlap similarity
+    words1 = set(text1.lower().split())
+    words2 = set(text2.lower().split())
+    
+    if len(words1) == 0 and len(words2) == 0:
+        return 1.0
+    if len(words1) == 0 or len(words2) == 0:
+        return 0.0
+    
+    intersection = len(words1.intersection(words2))
+    union = len(words1.union(words2))
+    
+    return intersection / union if union > 0 else 0.0
 
 def run(args, load_8bit: bool = False,
     base_model: str = "",   
@@ -356,6 +443,45 @@ def run(args, load_8bit: bool = False,
         print(cnt_avg / len(data), cnt_any / len(data))
             # print('usage_so_far', gpt_usage(args.backend))
         file_out.write('\n]')
+    elif args.task == 'cpo_test':
+        print('====CPO Testing====')
+        
+        # Load CPO test data
+        with open(args.cpo_test_data, 'r', encoding='utf-8') as f:
+            cpo_test_data = json.load(f)
+        
+        print(f"Loaded {len(cpo_test_data)} CPO test samples")
+        
+        # Determine model path
+        if args.cpo_model_path:
+            model_path = args.cpo_model_path
+        else:
+            model_path = args.base_model
+            print("Warning: No CPO model path specified, using base model")
+        
+        # Test CPO model
+        accuracy, results = test_cpo_preference_accuracy(
+            model, 
+            tokenizer, 
+            cpo_test_data, 
+            num_samples=args.num_samples,
+            temperature=args.temperature
+        )
+        
+        # Save results
+        output_file = args.output_file if args.output_file else 'cpo_test_results.json'
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump({
+                'accuracy': accuracy,
+                'num_samples_tested': args.num_samples,
+                'model_path': model_path,
+                'test_data_path': args.cpo_test_data,
+                'results': results
+            }, f, indent=2, ensure_ascii=False)
+        
+        print(f"CPO test results saved to {output_file}")
+        print(f"Final CPO Preference Accuracy: {accuracy:.3f}")
+    
     end_time = time.time()
 
 
@@ -367,7 +493,7 @@ def parse_args():
     args.add_argument('--backend', type=str, choices=['gpt-4', 'gpt-3.5-turbo', 'llama2-7b'], default='llama2-7b')
     args.add_argument('--temperature', type=float, default=0.9)
 
-    args.add_argument('--task', type=str, required=True, choices=['game24', 'text', 'crosswords', 'math','gsm8k','svamp','asdiv', 'bamboogle', '2wiki', 'bbh', 'qasc', 'hotpotqa','fever','feverous','tabfacts','vitaminc'])
+    args.add_argument('--task', type=str, required=True, choices=['game24', 'text', 'crosswords', 'math','gsm8k','svamp','asdiv', 'bamboogle', '2wiki', 'bbh', 'qasc', 'hotpotqa','fever','feverous','tabfacts','vitaminc', 'cpo_test'])
     args.add_argument('--task_start_index', type=int, default=900)
     args.add_argument('--task_end_index', type=int, default=1000)
     args.add_argument('--base_model', type=str, default='')
@@ -388,6 +514,10 @@ def parse_args():
     args.add_argument('--percentage', type=float, default=1.0)   
     args.add_argument('--epoch', type=float, default=-1)   
     args.add_argument('--output_file', type=str, default='')   
+    # CPO-specific arguments
+    args.add_argument('--cpo_test_data', type=str, default='cpo_processed_data/cpo_test_data.json', help='Path to CPO test data')
+    args.add_argument('--cpo_model_path', type=str, default='', help='Path to trained CPO model')
+    args.add_argument('--num_samples', type=int, default=100, help='Number of samples to test')
     args = args.parse_args()
     return args
 
