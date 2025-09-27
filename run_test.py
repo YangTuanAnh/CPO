@@ -19,7 +19,24 @@ import torch.distributed as dist
 
 warnings.filterwarnings("ignore")
 
-def test_cpo_preference_accuracy(model, tokenizer, test_data, num_samples=100, temperature=0.7):
+# add imports
+from transformers import CLIPModel, CLIPTokenizer
+import torch.nn.functional as F
+
+# Initialize CLIP once (call this from run() before testing)
+def init_clip(device=None, clip_name="openai/clip-vit-base-patch32"):
+    """
+    Loads CLIP text encoder and tokenizer. Returns (model, tokenizer).
+    """
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+    tokenizer = CLIPTokenizer.from_pretrained(clip_name)
+    model = CLIPModel.from_pretrained(clip_name)
+    model.to(device)
+    model.eval()
+    return model, tokenizer, device
+
+def test_cpo_preference_accuracy(model, tokenizer, test_data, clip_model, clip_tokenizer, clip_device, num_samples=100, temperature=0.7):
     """
     Test CPO model on preference pairs to measure alignment accuracy
     """
@@ -60,8 +77,8 @@ def test_cpo_preference_accuracy(model, tokenizer, test_data, num_samples=100, t
             
             # Simple similarity-based preference prediction
             # In practice, you might want to use a more sophisticated method
-            chosen_similarity = calculate_similarity(generated_response, chosen)
-            rejected_similarity = calculate_similarity(generated_response, rejected)
+            chosen_similarity = calculate_similarity_clip(generated_response, chosen, clip_model, clip_tokenizer, clip_device)
+            rejected_similarity = calculate_similarity_clip(generated_response, rejected, clip_model, clip_tokenizer, clip_device)
             
             # Predict chosen if similarity is higher
             predicted_chosen = chosen_similarity > rejected_similarity
@@ -113,6 +130,46 @@ def calculate_similarity(text1, text2):
     union = len(words1.union(words2))
     
     return intersection / union if union > 0 else 0.0
+
+def calculate_similarity_clip(text1, text2, clip_model, clip_tokenizer, device="cpu"):
+    """
+    Compute cosine similarity between CLIP text embeddings for text1 and text2.
+    Returns a scalar similarity in [-1, 1]. If you want non-negative, map to [0,1].
+    """
+    # Handle empty strings gracefully
+    if (not text1) and (not text2):
+        return 1.0
+    if (not text1) or (not text2):
+        return 0.0
+
+    # Tokenize both texts together (batch) so tokenization & padding consistent
+    texts = [text1, text2]
+    inputs = clip_tokenizer(
+        texts,
+        padding=True,
+        truncation=True,
+        max_length=77,   # CLIP typical text length
+        return_tensors="pt",
+    )
+
+    # Move tensors to device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+
+    # Get text features (no grads)
+    with torch.no_grad():
+        # CLIPModel exposes get_text_features which returns embeddings
+        outputs = clip_model.get_text_features(**inputs)  # shape (2, D)
+
+    # Normalize to unit vectors
+    emb1 = F.normalize(outputs[0], p=2, dim=0)
+    emb2 = F.normalize(outputs[1], p=2, dim=0)
+
+    # Cosine similarity
+    sim = torch.dot(emb1, emb2).item()  # scalar in [-1, 1]
+
+    # Optionally map to [0,1]:
+    # sim01 = (sim + 1.0) / 2.0
+    return sim
 
 def run(args, load_8bit: bool = False,
     base_model: str = "",   
@@ -178,6 +235,8 @@ def run(args, load_8bit: bool = False,
     model.eval()
 
     end_time = time.time()
+
+    clip_model, clip_tokenizer, clip_device = init_clip(device=str(device))
 
     logs, cnt_avg, cnt_any = [], 0, 0
 
@@ -461,9 +520,8 @@ def run(args, load_8bit: bool = False,
         
         # Test CPO model
         accuracy, results = test_cpo_preference_accuracy(
-            model, 
-            tokenizer, 
-            cpo_test_data, 
+            model, tokenizer, cpo_test_data,
+            clip_model, clip_tokenizer, clip_device,
             num_samples=args.num_samples,
             temperature=args.temperature
         )
