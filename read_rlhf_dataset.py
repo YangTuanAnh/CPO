@@ -3,6 +3,10 @@ import json
 import random
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
+import os
+import base64
+from PIL import Image
+import io
 
 @dataclass
 class QAItem:
@@ -13,11 +17,27 @@ class QAItem:
     ratings: Dict[str, float]  # helpful, honest, harmless ratings
 
 class RLHFDatasetProcessor:
-    """Processes RLHF dataset with tree structure for CPO training"""
+    """Processes RLHF dataset with tree structure for CPO training + image support"""
     
-    def __init__(self, df: pd.DataFrame):
+    def __init__(self, df: pd.DataFrame, image_dir: str = "images"):
         self.df = df
         self.processed_data = []
+        self.image_dir = image_dir
+        os.makedirs(self.image_dir, exist_ok=True)
+
+    def _save_image(self, img_data: Any, row_id: int) -> Optional[str]:
+        """
+        Save image from dataframe row to images folder.
+        Supports base64, PIL image, or numpy array.
+        """
+        try:
+            img_path = os.path.join(self.image_dir, f"img_{row_id}.png")
+            img = Image.open(io.BytesIO(img_data['bytes']))
+            img.save(img_path)
+            return img_path
+        except Exception as e:
+            print(f"Could not save image for row {row_id}: {e}")
+            return None
         
     def extract_qa_hierarchy(self, row: pd.Series, language: str = 'en') -> List[QAItem]:
         """Extract Q&A hierarchy from a single row"""
@@ -220,56 +240,58 @@ class RLHFDatasetProcessor:
         return pairs
     
     def process_dataset(self, sample_size: Optional[int] = None, languages: List[str] = None) -> List[Dict[str, Any]]:
-        """Process the entire dataset for CPO training"""
+        """Process dataset including Q&A, ratings, image, and bbox"""
         if languages is None:
-            languages = ['en']  # Default to English only
-        
-        print(f"Processing dataset with {len(self.df)} rows...")
-        print(f"Languages: {languages}")
-        
+            languages = ['en']  # Default English
+
         all_pairs = []
         processed_rows = 0
-        
+
         for idx, row in self.df.iterrows():
             try:
-                # Process each language
+                # Save image if present
+                image_path = None
+                if "image" in row and pd.notna(row["image"]):
+                    image_path = self._save_image(row["image"], idx)
+
+                # Extract bbox if present
+                bbox_coords = None
+                if "Bbox coordinates normalized (X, Y, W, H)" in row and pd.notna(row["Bbox coordinates normalized (X, Y, W, H)"]):
+                    bbox_coords = row["Bbox coordinates normalized (X, Y, W, H)"]
+
                 for language in languages:
-                    # Extract Q&A hierarchy from this row
                     qa_items = self.extract_qa_hierarchy(row, language)
-                    
-                    # Also extract preference pairs directly from rating columns
                     rating_pairs = []
-                    for question_num in range(1, 5):  # Q1-Q4
-                        pairs = self.extract_preference_pairs_from_ratings(row, question_num)
-                        rating_pairs.extend(pairs)
-                    
+                    for question_num in range(1, 5):
+                        rating_pairs.extend(self.extract_preference_pairs_from_ratings(row, question_num))
+
                     if qa_items:
-                        # Create CPO pairs for this row
                         pairs = self.create_cpo_pairs(qa_items)
-                        # Add language info to metadata
                         for pair in pairs:
                             pair['metadata']['language'] = language
+                            if image_path:
+                                pair['metadata']['image_path'] = image_path
+                            if bbox_coords:
+                                pair['metadata']['bbox'] = bbox_coords
                         all_pairs.extend(pairs)
-                    
-                    # Add rating pairs
+
                     for pair in rating_pairs:
                         pair['metadata']['language'] = language
+                        if image_path:
+                            pair['metadata']['image_path'] = image_path
+                        if bbox_coords:
+                            pair['metadata']['bbox'] = bbox_coords
                     all_pairs.extend(rating_pairs)
-                    
+
                     if qa_items or rating_pairs:
                         processed_rows += 1
+                        if sample_size and processed_rows >= sample_size:
+                            break
                         
-                        if processed_rows % 100 == 0:
-                            print(f"Processed {processed_rows} rows, generated {len(all_pairs)} pairs")
-                
-                # Optional sampling
-                if sample_size and processed_rows >= sample_size:
-                    break
-                    
             except Exception as e:
                 print(f"Error processing row {idx}: {e}")
                 continue
-        
+
         print(f"Final: Processed {processed_rows} rows, generated {len(all_pairs)} preference pairs")
         return all_pairs
     

@@ -1,0 +1,2284 @@
+[
+  {
+    "prompt": "Question: What is the visual composition of this lesion?\n\nAnswer:",
+    "chosen": "No posterior atrophy, no posterior cingulate and parieto-occipital sulci are observed, suggesting that the Koedam score is likely low (mild or absent atrophy in these regions).",
+    "rejected": "Based on the provided information, the Koedam score severity is mild.",
+    "metadata": {
+      "question_id": "What is the visual composition of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_63.png",
+      "bbox": "[[0.14991166326087674, 0.2055118147107221, 0.4481581582010816, 0.39095943157274726], [0.5268329416764189, 0.20025862856959942, 0.8772809754438602, 0.4168371100042413], [0.011470833920511223, 0.47621805712136017, 0.3651841412153146, 0.6140916931606075], [0.6067558090731167, 0.482409404308373, 0.9834967404917466, 0.6320270552765221], [0.2894959151836444, 0.6595319167908856, 0.5109480840445483, 0.790558998184039], [0.4506014038733309, 0.6616657652456838, 0.636335170005948, 0.847969430831529]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the dermatological presentation of this lesion?\n\nAnswer:",
+    "chosen": "The MRI findings do not show posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci. It does not provide a comprehensive assessment of the Koedam score.",
+    "rejected": "Based on the MRI, there is no posterior atrophy, posterior cingulate, or parieto-occipital sulci abnormalities, suggesting a low Koedam score. Further evaluation may be beneficial.",
+    "metadata": {
+      "question_id": "What is the dermatological presentation of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_98.png",
+      "bbox": "[[0.6166702939301393, 0.4684016519778547, 0.9314500799640041, 0.6214739818600445], [0.06105422873877353, 0.47934119313046997, 0.3859200467193636, 0.5914195930321929], [0.5895017299763303, 0.6393331626485926, 0.8928072368535024, 0.7602595231379823], [0.1830769811060063, 0.6884365333290583, 0.5397980844374609, 0.8466278474829805]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "Cortical atrophy is not observed in the provided images. The widening of the temporal horn of the lateral ventricle suggests possible volume loss. No posterior atrophy is present, and the posterior cingulate and parieto-occipital sulci appear normal. This set of findings does not confirm severe GCA.",
+    "rejected": "Based on the images and given features, the GCA does not appear severe, but a moderate level of disease activity might be present. GCA may be indicated by inflammation of the arteries, but this is only evident via biopsy.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 1,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_65.png",
+      "bbox": "[[0.02997915131336018, 0.5174066315596405, 0.28629531631806315, 0.6639087582398263], [0.7052319388257327, 0.5181159908091273, 0.9542403481727663, 0.6789200010698037], [0.06820096195269693, 0.6762980597966637, 0.4131403413659515, 0.8476019869030629], [0.5467929078687259, 0.6823485613184183, 0.9140923390957918, 0.8512173939917677]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you paint a visual picture of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "No atrophy, no widening of the temporal horn of lateral ventricle. No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "metadata": {
+      "question_id": "How would you paint a visual picture of this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_38.png",
+      "bbox": "[[0.20773628810734168, 0.487871443622447, 0.3825857244689834, 0.5663798169404779], [0.6048969680787799, 0.48429462037245297, 0.7643090379961306, 0.5809790222733684]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual elements are distinctive to this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include sufficient details to determine the severity of medial temporal atrophy (MTA). More specific details about the imaging findings would be needed to assess MTA severity.",
+    "rejected": "Based on the widening of temporal sulci, sulcal widening of posterior cingulate and parieto-occipital sulci, and gyral atrophy, there is severe MTA. The changes are indicative of substantial neurodegenerative processes.",
+    "metadata": {
+      "question_id": "What visual elements are distinctive to this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_67.png",
+      "bbox": "[[0.042551557382490654, 0.4905348490621664, 0.2869118232367566, 0.6746636759286019], [0.7293002558476741, 0.584606108482555, 0.9432287511797535, 0.718337254706426], [0.5185810166522393, 0.5946555609330474, 0.7677198622729519, 0.7307416368461744], [0.20524023330576735, 0.5902851041204835, 0.4782467893998547, 0.7479167108659232], [0.27287775101987727, 0.7308857768876211, 0.7304718133283573, 0.8974154251663612]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual identity of this lesion?\n\nAnswer:",
+    "chosen": "Also widening of temporal horn of lateral ventricle.",
+    "rejected": "Also widening of temporal horn of lateral ventricle.",
+    "metadata": {
+      "question_id": "What is the visual identity of this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_0.png",
+      "bbox": "[[0.3182535243272449, 0.18703756597346313, 0.5734761975259389, 0.45103481060258477]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you construct a visual profile of this lesion?\n\nAnswer:",
+    "chosen": "Mild atrophy is noted, as demonstrated by the opening of sulci.",
+    "rejected": "The GCA is likely extremely severe.",
+    "metadata": {
+      "question_id": "How would you construct a visual profile of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_44.png",
+      "bbox": "[[0.0924135046809201, 0.5601166250144204, 0.4013828390148455, 0.7884634878040241], [0.6100313462760547, 0.5643111575477503, 0.9091315084570559, 0.775328154054556], [0.37925977270836175, 0.6770143186755109, 0.6417506898864931, 0.7818073277373075]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you delineate the appearance of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not allow for the determination of the severity of Medial Temporal Atrophy (MTA).",
+    "rejected": "Based on the described widening of the temporal sulci and gyral atrophy, it's likely moderate.",
+    "metadata": {
+      "question_id": "How would you delineate the appearance of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_84.png",
+      "bbox": "[[0.04185293316623704, 0.4951728949153304, 0.2805550710739083, 0.6781846557010558], [0.7314803469589456, 0.5816145277245591, 0.9401973655206466, 0.7190899674131551], [0.5055400888248276, 0.5962377790914525, 0.7782420850576253, 0.7300917223657994], [0.2105213293102062, 0.5967000747455038, 0.4745040706283116, 0.7490916057991193], [0.26522144887200905, 0.7316882811785861, 0.7420373278987306, 0.8986681841494979]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you identify the visual hallmarks of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex.",
+    "metadata": {
+      "question_id": "How would you identify the visual hallmarks of this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_10.png",
+      "bbox": "[[0.38230385685583534, 0.1169909820615525, 0.6230121950397406, 0.31960855664014287], [0.11776261938974666, 0.2368610521978508, 0.2908494722491612, 0.7206021410241449], [0.38457617284056306, 0.6749121686630876, 0.6353572175066188, 0.8813411151064929]]"
+    }
+  },
+  {
+    "prompt": "Question: What visible features constitute this lesion's appearance?\n\nAnswer:",
+    "chosen": "The provided context describes mild atrophy characterized by sulci opening and mild shrinkage of the cerebral cortex. Given this description, GCA severity is mild.<reject:B>Severe GCA may present with mild cerebral cortex shrinkage and sulci opening, as described in the context",
+    "rejected": "Severe GCA may present with mild cerebral cortex shrinkage and sulci opening, as described in the context",
+    "metadata": {
+      "question_id": "What visible features constitute this lesion's appearance?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_49.png",
+      "bbox": "[[0.3475041723752289, 0.1024609539315817, 0.700107732746786, 0.37053841185043007]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you sketch the morphological traits of this lesion?\n\nAnswer:",
+    "chosen": "The context indicates widening of the temporal horn of the lateral ventricle. Assessing the severity of medial temporal atrophy (MTA) accurately often requires a more comprehensive evaluation, potentially involving multiple imaging modalities and clinical assessments.",
+    "rejected": "The widening of the temporal horn of the lateral ventricle suggests the presence of significant neurodegenerative changes; therefore, the severity of MTA is probably high.",
+    "metadata": {
+      "question_id": "How would you sketch the morphological traits of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_57.png",
+      "bbox": "[[0.2918184689729293, 0.5776590797631173, 0.5483601033600862, 0.7966114415433164]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you represent the visual essence of this lesion?\n\nAnswer:",
+    "chosen": "The provided context lacks the details necessary to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "The medial temporal lobe atrophy (MTA) appears to be moderate.",
+    "metadata": {
+      "question_id": "How would you represent the visual essence of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_1.png",
+      "bbox": "[[0.3772130161479055, 0.11430428302286809, 0.6291587912065812, 0.3161451782414381], [0.10655374685669738, 0.23488493540692942, 0.2959182523350227, 0.7243157492095947], [0.38565486898859674, 0.676540566692485, 0.6270607803486111, 0.8817394024657096]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you articulate the physical manifestation of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you articulate the physical manifestation of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_29.png",
+      "bbox": "[[0.0290958833970094, 0.5474390797004559, 0.2760814202992221, 0.7444848731574321], [0.6926874142100818, 0.5438815094076342, 0.9346437234339806, 0.7468756703722824], [0.2027492518530153, 0.7298894544516227, 0.8127963043867172, 0.8480590146061788]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you enumerate the physical features of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you enumerate the physical features of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_92.png",
+      "bbox": "[[0.23732732406561868, 0.25124193135823797, 0.49276716544432264, 0.4019778362387629], [0.5758835903667987, 0.25410842261778904, 0.8320379267291177, 0.37455595413641823], [0.0781517154866892, 0.4218560375369361, 0.43267805391483166, 0.5890440813446616], [0.576673810898813, 0.47345888739754494, 0.9359994992209021, 0.6090067791262896], [0.24605998848497704, 0.6405611395398411, 0.49182002955462584, 0.8194422604816656], [0.4757738413886185, 0.6570027044856785, 0.7525646843265508, 0.8075954931118039]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the pictorial description of this lesion?\n\nAnswer:",
+    "chosen": "The image shows no signs of posterior atrophy, or atrophy in the posterior cingulate and parieto-occipital sulci regions, suggesting that Koedam is not severe in these areas. However, a complete assessment would require a more thorough evaluation of other brain regions.",
+    "rejected": "There is no evidence of posterior atrophy or atrophy in the posterior cingulate and parieto-occipital sulci; Koedam is therefore likely mild, but monitoring is still required.",
+    "metadata": {
+      "question_id": "What is the pictorial description of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_45.png",
+      "bbox": "[[0.6927211126136958, 0.49084791182951504, 0.9471940073370204, 0.698148484155916], [0.04928690623623753, 0.5063072248791525, 0.319905756438706, 0.6961906991563568], [0.2819859724509936, 0.5105769565393072, 0.5249121557673232, 0.6629935494067816], [0.4584579147809765, 0.5132734332625417, 0.7258913601880236, 0.676118435138849], [0.259558825696947, 0.7024020548207852, 0.7376098632927145, 0.8669665438337678]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual profile of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not offer sufficient information to determine the severity of Medial Temporal Lobe Atrophy (MTA).",
+    "rejected": "Based on the mild atrophy and cortical shrinkage, the MTA is likely mild.",
+    "metadata": {
+      "question_id": "What is the visual profile of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_68.png",
+      "bbox": "[[0.3723820442327725, 0.11191615898757867, 0.6354651258091423, 0.3162416810038462], [0.11801140947690175, 0.2362811657883498, 0.28934228448786103, 0.7287397561592401], [0.3803128863980556, 0.6737213502644653, 0.6317651511875106, 0.8898899239906359]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visible composition of this lesion?\n\nAnswer:",
+    "chosen": "Mild atrophy is indicated by the opening of sulci and shrinkage of the cerebral cortex.",
+    "rejected": "There is some mild atrophy. The atrophy is characterized by sulci opening and the cerebral cortex shrinking.",
+    "metadata": {
+      "question_id": "What is the visible composition of this lesion?",
+      "variation_id": 1,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_52.png",
+      "bbox": "[[0.3678387558215198, 0.11781848567959145, 0.637893716815041, 0.31075056342001356], [0.1171841086740619, 0.23053696594870973, 0.2925966346194693, 0.7240266558310684], [0.38198253445927227, 0.6782763383799278, 0.6359087435355592, 0.8840044689208395]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the pictorial description of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No atrophy, no widening of the temporal horn of lateral ventricle. No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What is the pictorial description of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_45.png",
+      "bbox": "[[0.6927211126136958, 0.49084791182951504, 0.9471940073370204, 0.698148484155916], [0.04928690623623753, 0.5063072248791525, 0.319905756438706, 0.6961906991563568], [0.2819859724509936, 0.5105769565393072, 0.5249121557673232, 0.6629935494067816], [0.4584579147809765, 0.5132734332625417, 0.7258913601880236, 0.676118435138849], [0.259558825696947, 0.7024020548207852, 0.7376098632927145, 0.8669665438337678]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "The context does not contain sufficient information to determine the severity of the medial temporal lobe atrophy (MTA).",
+    "rejected": "The degree of medial temporal lobe atrophy (MTA) appears to be in the moderate to severe range.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_82.png",
+      "bbox": "[[0.33252194788578354, 0.10958533197635688, 0.7095642120462362, 0.3760949393333905]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you annotate the visual details of this lesion?\n\nAnswer:",
+    "chosen": "No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "rejected": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you annotate the visual details of this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_25.png",
+      "bbox": "[[0.15579719481806514, 0.20735816273891175, 0.4402428322879581, 0.3904698584971888], [0.5286780883630527, 0.20084336445844192, 0.8719617219128857, 0.4102170008001032], [0.000821143965627609, 0.47125342100134493, 0.3692805418220642, 0.6110101705443806], [0.6066044989800726, 0.48540451365311726, 0.9834093916396189, 0.6384690655784199], [0.28136912620998883, 0.6552702386620027, 0.5198023868860501, 0.7965770321918864], [0.45061206967861567, 0.6664597759522182, 0.6384238844998082, 0.8414451066130284]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you annotate the visual details of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you annotate the visual details of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_36.png",
+      "bbox": "[[0.7082005953098226, 0.5065701306086299, 0.8894536063383205, 0.6898320302433829], [0.08353785329527996, 0.5044971384810082, 0.2710582930199336, 0.6920369952113382], [0.10223955649699179, 0.6572863259792737, 0.5090884032414091, 0.8183326229340444], [0.42512262006336043, 0.6555014561132511, 0.865575778065755, 0.8158839036169949]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you chronicle the lesion's physical characteristics?\n\nAnswer:",
+    "chosen": "B>Based on the assessment, there are no signs of cortical atrophy, brain parenchyma atrophy, or enlargement of the ventricles.",
+    "rejected": "A>The described lesion appears to be mild based on the lack of atrophy.",
+    "metadata": {
+      "question_id": "How would you chronicle the lesion's physical characteristics?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_87.png",
+      "bbox": "[[0.05152169787697909, 0.4850613111206906, 0.320706507255163, 0.6799672970256581], [0.6812545970597967, 0.5422167331086882, 0.9684614739812905, 0.7322388954779867], [0.1956346404172901, 0.7291373389702063, 0.8099995110384165, 0.8443777702022863]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you specify the visible traits of this lesion?\n\nAnswer:",
+    "chosen": "The MRI shows no cortical atrophy, no brain parenchyma atrophy, and no enlargement of the interventricular space.",
+    "rejected": "Based on the MRI, there is no cortical atrophy, no brain parenchyma atrophy, and no enlargement of the interventricular space, suggesting that the patient is likely healthy and does not need immediate medical attention.",
+    "metadata": {
+      "question_id": "How would you specify the visible traits of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_19.png",
+      "bbox": "[[0.4697600170775992, 0.2810296248511884, 0.7240435326106817, 0.4261697050043732], [0.16572238684716112, 0.2911170997298723, 0.4479777025040931, 0.4359628016653713], [0.10953244082683412, 0.41000925266211247, 0.4159439686464199, 0.5980380035355624], [0.5019121679131628, 0.44182418656587247, 0.8636341002321881, 0.604561078344988], [0.09356695509188628, 0.5880873772317986, 0.5004241544524043, 0.812083741405563], [0.43214145862605846, 0.5966601209834588, 0.8231316652309681, 0.770710275562899]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you enumerate the physical features of this lesion?\n\nAnswer:",
+    "chosen": "The context provided does not offer enough information to assess the severity of medial temporal atrophy (MTA).",
+    "rejected": "Given the absence of reported cortical atrophy or ventricular enlargement, the medial temporal atrophy (MTA) is likely minimal. No immediate concern is indicated.",
+    "metadata": {
+      "question_id": "How would you enumerate the physical features of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_92.png",
+      "bbox": "[[0.23732732406561868, 0.25124193135823797, 0.49276716544432264, 0.4019778362387629], [0.5758835903667987, 0.25410842261778904, 0.8320379267291177, 0.37455595413641823], [0.0781517154866892, 0.4218560375369361, 0.43267805391483166, 0.5890440813446616], [0.576673810898813, 0.47345888739754494, 0.9359994992209021, 0.6090067791262896], [0.24605998848497704, 0.6405611395398411, 0.49182002955462584, 0.8194422604816656], [0.4757738413886185, 0.6570027044856785, 0.7525646843265508, 0.8075954931118039]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the morphological signature of this lesion?\n\nAnswer:",
+    "chosen": "There is no atrophy or widening of the temporal horn of the lateral ventricle. Further, there is no cortical atrophy, brain parenchyma atrophy, or enlargement of the interventricular space.",
+    "rejected": "The scan indicates an absence of atrophy and no abnormalities in the temporal horn of the lateral ventricle, cortex, or brain parenchyma, suggesting a healthy brain structure. No enlargement of the interventricular space is observed. This overall picture is quite reassuring.",
+    "metadata": {
+      "question_id": "What is the morphological signature of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_14.png",
+      "bbox": "[[0.4995242631253005, 0.28348162073960637, 0.7734780822938436, 0.4202079944527334], [0.22819228407959558, 0.3241860223340763, 0.4470123602196072, 0.4761858930538174], [0.5991073334984032, 0.4454887358634865, 0.9166502456435033, 0.5522050246830749], [0.11404296098150653, 0.49300310628185906, 0.38102950883920517, 0.6381010463908273], [0.596594376866103, 0.5469620967161741, 0.9245264810350163, 0.6659446492144248], [0.0920993523629385, 0.6400234752318217, 0.4805256688049843, 0.8336459571290977], [0.5332459932785127, 0.6724949842885586, 0.8731218449050655, 0.8356958956993389]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you identify the visual hallmarks of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include sufficient information to determine the severity of medial temporal atrophy (MTA).",
+    "rejected": "Based on the mild atrophy and shrinkage observed, the MTA appears to be in an early stage, likely Grade 1.",
+    "metadata": {
+      "question_id": "How would you identify the visual hallmarks of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_10.png",
+      "bbox": "[[0.38230385685583534, 0.1169909820615525, 0.6230121950397406, 0.31960855664014287], [0.11776261938974666, 0.2368610521978508, 0.2908494722491612, 0.7206021410241449], [0.38457617284056306, 0.6749121686630876, 0.6353572175066188, 0.8813411151064929]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual profile of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include any information about an individual named Koedam, and therefore, it is impossible to determine the severity of their condition from this information alone.",
+    "rejected": "Koedam presents with mild to moderate Koedam-Sprenger syndrome.",
+    "metadata": {
+      "question_id": "What is the visual profile of this lesion?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_68.png",
+      "bbox": "[[0.3723820442327725, 0.11191615898757867, 0.6354651258091423, 0.3162416810038462], [0.11801140947690175, 0.2362811657883498, 0.28934228448786103, 0.7287397561592401], [0.3803128863980556, 0.6737213502644653, 0.6317651511875106, 0.8898899239906359]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_93.png",
+      "bbox": "[[0.489650200443162, 0.20291447277685748, 0.8077513356095235, 0.3616424348547014], [0.1279081516382072, 0.2434430371687305, 0.4239370503725769, 0.38552680346426], [0.06525337689199477, 0.39859164435503086, 0.3526905215093688, 0.5794453205564432], [0.6571844660237974, 0.410842658736748, 0.9573650384678205, 0.6079252955420101], [0.043430096295729866, 0.6306717507856056, 0.3216947475589123, 0.7899968371779773], [0.5882540192096402, 0.6650843942483351, 0.9360268119862014, 0.8189088137252142]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "B>Based on the visual analysis, there is no cortical atrophy, brain parenchyma atrophy, or interventricular space enlargement observed.",
+    "rejected": "A>Based on the visual analysis of the lesion, the GCA is likely in an early stage, with only subtle signs of impact",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_93.png",
+      "bbox": "[[0.489650200443162, 0.20291447277685748, 0.8077513356095235, 0.3616424348547014], [0.1279081516382072, 0.2434430371687305, 0.4239370503725769, 0.38552680346426], [0.06525337689199477, 0.39859164435503086, 0.3526905215093688, 0.5794453205564432], [0.6571844660237974, 0.410842658736748, 0.9573650384678205, 0.6079252955420101], [0.043430096295729866, 0.6306717507856056, 0.3216947475589123, 0.7899968371779773], [0.5882540192096402, 0.6650843942483351, 0.9360268119862014, 0.8189088137252142]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you record the physical manifestation of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not contain sufficient information to determine the severity of Koedam.",
+    "rejected": "Koedam appears to be severe, given the observed atrophy and ventricular enlargement.",
+    "metadata": {
+      "question_id": "How would you record the physical manifestation of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_28.png",
+      "bbox": "[[0.21407828846705393, 0.47971152532683353, 0.4663872465560274, 0.7252445960790136]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you characterize the physical attributes of this lesion?\n\nAnswer:",
+    "chosen": "The MRI reveals mild atrophy with sulci opening. This finding alone is not sufficient to determine the severity of GCA. A comprehensive assessment is required, including clinical data and lab results, before making any conclusions about disease severity.",
+    "rejected": "Mild atrophy, opening of sulci. Since it is mild, the GCA is probably not severe.",
+    "metadata": {
+      "question_id": "How would you characterize the physical attributes of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_9.png",
+      "bbox": "[[0.5148835207249863, 0.24549864945034786, 0.7993206642617661, 0.3834378520084994], [0.08453301595883603, 0.36184333310298156, 0.32436476564602634, 0.54088025055405], [0.6600149305638575, 0.3849035758478991, 0.9592057066872794, 0.5110738234934723], [-0.009974113089538161, 0.5539937789296474, 0.26467485599669227, 0.6722502826905948], [0.7478430539044871, 0.567370772809623, 1.0050828415887096, 0.7214521327529669]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "GCA severity cannot be determined due to the absence of cortical atrophy.",
+    "rejected": "GCA is classified as moderate, characterized by noticeable cortical atrophy.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 1,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_50.png",
+      "bbox": "[[0.5092174442198192, 0.24198001911566874, 0.8520092025872357, 0.39984475491576577], [0.17370834256457693, 0.2507292232031136, 0.4336384804450639, 0.37543689836465904], [0.036214206622465855, 0.4524049842764699, 0.3052524737942842, 0.5705599711433342], [0.6703423621182731, 0.46589164483765794, 0.9212626369171185, 0.6052699062228887], [0.0734230524837067, 0.6221542046492047, 0.31303740442955297, 0.7405658747452515], [0.5539055342426334, 0.6360888434763623, 0.8959225451248277, 0.8019386315433608]]"
+    }
+  },
+  {
+    "prompt": "Question: What is your assessment of the lesion's morphological traits?\n\nAnswer:",
+    "chosen": "B>There is no posterior atrophy, nor any indication of posterior cingulate and parieto-occipital sulci abnormalities.",
+    "rejected": "A>Based on the imaging, Koedam is of normal severity.",
+    "metadata": {
+      "question_id": "What is your assessment of the lesion's morphological traits?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_22.png",
+      "bbox": "[[0.4992892904701849, 0.20903066999615827, 0.7966435062515088, 0.3672419510491585], [0.144991352673687, 0.24573603620009368, 0.41393316270007396, 0.387865994009526], [0.0648732568768457, 0.3966184074001425, 0.3543503957474911, 0.5753258233808718], [0.6461182956014687, 0.41396456799954967, 0.9651981818649876, 0.6058787933031506], [0.041281672775949144, 0.6353974481129381, 0.32424034012890846, 0.7859972988314984], [0.5912345124479662, 0.6651104679398856, 0.9355514881096917, 0.8184575147768449]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "Also widening of temporal horn of lateral ventricle, mild loss of hippocampal volume.",
+    "rejected": "Extreme widening of temporal sulci, severe end-stage atrophy knife blade. Also widening of temporal horn of lateral ventricle, mild loss of hippocampal volume. Extreme widening of posterior cingulate and occipital sulci.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_46.png",
+      "bbox": "[[0.29465094129808167, 0.412189976706049, 0.7073364192765557, 0.7185361931733889], [0.6725949734413851, 0.43848516777479674, 0.914260033581932, 0.7795765096997691], [0.051446866320176324, 0.4527344667150469, 0.3386001892702003, 0.8114946504607154]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you catalog the observable traits of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex.",
+    "metadata": {
+      "question_id": "How would you catalog the observable traits of this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_31.png",
+      "bbox": "[[0.37666004802196573, 0.11396501006355714, 0.6314168454970391, 0.3128525710829782], [0.10862420745283685, 0.2320242609937581, 0.2969828507278416, 0.7263260187250289], [0.38337308569419637, 0.6767001290334174, 0.6347196593394205, 0.8895449634215904]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual identity of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Also widening of temporal horn of lateral ventricle.",
+    "metadata": {
+      "question_id": "What is the visual identity of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_0.png",
+      "bbox": "[[0.3182535243272449, 0.18703756597346313, 0.5734761975259389, 0.45103481060258477]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you characterize the physical attributes of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not contain sufficient information to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "The severity of MTA appears to be mild, given the description of 'mild atrophy' and 'opening of sulci'",
+    "metadata": {
+      "question_id": "How would you characterize the physical attributes of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_9.png",
+      "bbox": "[[0.5148835207249863, 0.24549864945034786, 0.7993206642617661, 0.3834378520084994], [0.08453301595883603, 0.36184333310298156, 0.32436476564602634, 0.54088025055405], [0.6600149305638575, 0.3849035758478991, 0.9592057066872794, 0.5110738234934723], [-0.009974113089538161, 0.5539937789296474, 0.26467485599669227, 0.6722502826905948], [0.7478430539044871, 0.567370772809623, 1.0050828415887096, 0.7214521327529669]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you detail the visual presentation of this lesion?\n\nAnswer:",
+    "chosen": "Based on the provided context, it's not possible to determine how severe GCA is. There is no information on GCA in the findings.",
+    "rejected": "Based on the mild atrophy, GCA is likely moderate.",
+    "metadata": {
+      "question_id": "How would you detail the visual presentation of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_6.png",
+      "bbox": "[[0.16855229304752717, 0.334125223370723, 0.3314094847922287, 0.5768835490646907], [0.2516074081612355, 0.7022852440443078, 0.7028259064352873, 0.9734790429161653]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical attributes characterize this lesion?\n\nAnswer:",
+    "chosen": "The context indicates no posterior atrophy, posterior cingulate, or parieto-occipital sulci. This would suggest that based on the limited data, there is no presence of Koedam in these regions.",
+    "rejected": "Based on the context, the patient does not exhibit notable characteristics of Koedam's disease. It's likely they don't have it.",
+    "metadata": {
+      "question_id": "What physical attributes characterize this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_51.png",
+      "bbox": "[[0.476666625306671, 0.2834231770138466, 0.7190647721251255, 0.42988083908212715], [0.18544560492180595, 0.2933794754284309, 0.4339726465075806, 0.4380949194923102], [0.09979410367540975, 0.4150851657712271, 0.4265384972794841, 0.59802468045683], [0.5083494742870525, 0.4407781818766227, 0.8606636219425193, 0.6085916815083063], [0.09165186445692795, 0.583764013344543, 0.5037409830422604, 0.8148740261672127], [0.4462877492353513, 0.5999724053152918, 0.8114344725835944, 0.7766278608751052]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual elements define this particular lesion?\n\nAnswer:",
+    "chosen": "B>The degree of GCA is moderate, as evidenced by gyral volume loss and widening of the sulci.",
+    "rejected": "A>The severity of GCA is mild, based on the subtle gyral atrophy and minimal sulcal widening.",
+    "metadata": {
+      "question_id": "What visual elements define this particular lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_96.png",
+      "bbox": "[[0.11628974116175018, 0.6035245085168042, 0.4829406164355334, 0.8066095325511773], [0.47357801699126895, 0.6069024020134113, 0.8732717110128296, 0.8053755928925541]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visible architecture of this lesion?\n\nAnswer:",
+    "chosen": "Mild sulcal widening and gyral atrophy are present, indicating a subtle degree of Koedam's severity on this scan.",
+    "rejected": "The Koedam severity is moderate, presenting with substantial widening of the sulci and atrophy of the gyri.",
+    "metadata": {
+      "question_id": "What is the visible architecture of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_91.png",
+      "bbox": "[[0.6085232966051284, 0.5795215562795434, 0.880657559373807, 0.7570374213270322], [0.28365111872077275, 0.7157217828212163, 0.7057711316685885, 0.8515931015390088]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you identify the visual hallmarks of this lesion?\n\nAnswer:",
+    "chosen": "Without further information or specific imaging focused on the medial temporal lobes, it's not possible to assess the severity of MTA based on the given context.",
+    "rejected": "Given the presence of infection areas identified, there's a high probability of severe MTA. Immediate neurological consultation and further imaging are recommended.",
+    "metadata": {
+      "question_id": "How would you identify the visual hallmarks of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_4.png",
+      "bbox": "[[0.04920233523985968, 0.4863607358724227, 0.3224860031748551, 0.6732916936604509], [0.6759703621114681, 0.541215609351505, 0.967255580078236, 0.7336651171671428], [0.21309413901677307, 0.727738317366296, 0.7954997203305765, 0.8412925281733312]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you outline the physical features of this lesion?\n\nAnswer:",
+    "chosen": "Based on the outlined physical features of the lesion, there's no evidence of posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci. This does not mean that the Koedam is not severe, but that posterior atrophy, no posterior cingulate and parieto-occipital sulci do not show in this instance.",
+    "rejected": "The absence of posterior atrophy and abnormalities in the posterior cingulate and parieto-occipital sulci suggests that the Koedam infection isn't severe. No cause for worry.",
+    "metadata": {
+      "question_id": "How would you outline the physical features of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_61.png",
+      "bbox": "[[0.6192944829472734, 0.4686793475769315, 0.9213911481353554, 0.6253715990352087], [0.05185154327104415, 0.47650965424187985, 0.38980674202447246, 0.5943322097333649], [0.5790382857602547, 0.637830111602797, 0.9059239719917671, 0.7604489387967616], [0.18928682432595412, 0.686827774725612, 0.5369298462241376, 0.8450375399738642]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you chronicle the lesion's physical characteristics?\n\nAnswer:",
+    "chosen": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement.",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you chronicle the lesion's physical characteristics?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_87.png",
+      "bbox": "[[0.05152169787697909, 0.4850613111206906, 0.320706507255163, 0.6799672970256581], [0.6812545970597967, 0.5422167331086882, 0.9684614739812905, 0.7322388954779867], [0.1956346404172901, 0.7291373389702063, 0.8099995110384165, 0.8443777702022863]]"
+    }
+  },
+  {
+    "prompt": "Question: What morphological details can you observe in this lesion?\n\nAnswer:",
+    "chosen": "The context provided does not include the necessary information to evaluate the severity of Koedam. A diagnosis cannot be made from this limited information.",
+    "rejected": "Based on the mild atrophy and opening of sulci, Koedam is likely mild to moderate in severity.",
+    "metadata": {
+      "question_id": "What morphological details can you observe in this lesion?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_78.png",
+      "bbox": "[[0.5167775392551851, 0.24271714127962732, 0.7999218987386026, 0.385342266916936], [0.07398675462023943, 0.3676400743479166, 0.32912170140209734, 0.5464066275022657], [0.6633328474084196, 0.3881682053614549, 0.9532448076871842, 0.5175324277949854], [-0.007620090952016573, 0.5524310256458771, 0.26500781818036134, 0.6718821178325081], [0.7479665212574054, 0.5699141781710129, 1.003060450655794, 0.7259896734743946]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you characterize the physical attributes of this lesion?\n\nAnswer:",
+    "chosen": "Mild atrophy: opening of sulci, mild shrinkage of cerebral cortex.",
+    "rejected": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex.",
+    "metadata": {
+      "question_id": "How would you characterize the physical attributes of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_85.png",
+      "bbox": "[[0.08463412543466894, 0.3309006759104087, 0.3481481044142836, 0.692686700286101], [0.34354931619854634, 0.671897880655885, 0.614457709849578, 0.9315552981534764]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you chronicle the lesion's physical characteristics?\n\nAnswer:",
+    "chosen": "Koedam severity cannot be directly determined from the provided imaging characteristics; however, observations such as the absence of posterior atrophy and intact posterior cingulate and parieto-occipital sulci suggest that if present, Koedam's disease may not be significantly advanced. Clinical correlation is needed to determine the actual severity.",
+    "rejected": "Based on the absence of posterior atrophy and intact posterior cingulate and parieto-occipital sulci, Koedam's disease is likely mild.",
+    "metadata": {
+      "question_id": "How would you chronicle the lesion's physical characteristics?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_62.png",
+      "bbox": "[[0.03763994200598225, 0.5129493163396408, 0.2730691390248197, 0.6620897086419483], [0.7077896169339871, 0.5175713158715894, 0.9457833894751836, 0.6766714456339346], [0.0589989477883514, 0.6704173610315467, 0.4285998382146424, 0.8420524098151021], [0.550982834014977, 0.6893526482824832, 0.9189554197785452, 0.8596417160800919]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you articulate the physical manifestation of this lesion?\n\nAnswer:",
+    "chosen": "B>The context does not provide sufficient information to determine the severity of MTA.",
+    "rejected": "A>Based on the description, the MTA is moderate.",
+    "metadata": {
+      "question_id": "How would you articulate the physical manifestation of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_76.png",
+      "bbox": "[[0.16346277107638968, 0.20753563731308272, 0.43148196414426426, 0.39779870689012203], [0.5184866944098856, 0.2023619719179642, 0.8816465321925114, 0.41939973306354156], [0.025133460618739674, 0.4794527259460129, 0.35176563127258564, 0.6190358462573909], [0.617996828297307, 0.4826445502691215, 0.9759158677889722, 0.6388914438575587], [0.2930727742105618, 0.6515859364825455, 0.5150345155761308, 0.7932719743228613], [0.436349257217456, 0.6676484213821441, 0.6477117984654649, 0.8468769417489638]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "The provided context does not contain sufficient information to determine the severity of medial temporal atrophy (MTA).",
+    "rejected": "Moderate, as the lesion appears to be affecting structures that surround the temporal lobe bilaterally.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_50.png",
+      "bbox": "[[0.5092174442198192, 0.24198001911566874, 0.8520092025872357, 0.39984475491576577], [0.17370834256457693, 0.2507292232031136, 0.4336384804450639, 0.37543689836465904], [0.036214206622465855, 0.4524049842764699, 0.3052524737942842, 0.5705599711433342], [0.6703423621182731, 0.46589164483765794, 0.9212626369171185, 0.6052699062228887], [0.0734230524837067, 0.6221542046492047, 0.31303740442955297, 0.7405658747452515], [0.5539055342426334, 0.6360888434763623, 0.8959225451248277, 0.8019386315433608]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you annotate the visual details of this lesion?\n\nAnswer:",
+    "chosen": "There is no indication of posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci, based on the imaging.",
+    "rejected": "The Koedam severity appears to be in the mild range, as evidenced by the absence of posterior atrophy and related sulci abnormalities.",
+    "metadata": {
+      "question_id": "How would you annotate the visual details of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_36.png",
+      "bbox": "[[0.7082005953098226, 0.5065701306086299, 0.8894536063383205, 0.6898320302433829], [0.08353785329527996, 0.5044971384810082, 0.2710582930199336, 0.6920369952113382], [0.10223955649699179, 0.6572863259792737, 0.5090884032414091, 0.8183326229340444], [0.42512262006336043, 0.6555014561132511, 0.865575778065755, 0.8158839036169949]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "The presented mild atrophy shows some opening of sulci and mild shrinkage of the cerebral cortex, suggesting a mild manifestation of the condition.",
+    "rejected": "The atrophy is marked by the opening of sulci, with mild shrinkage of the cerebral cortex, suggesting a severe manifestation of GCA. The case is critical and requires immediate intervention.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_30.png",
+      "bbox": "[[0.05601237175454227, 0.48072205142850083, 0.332680821747479, 0.690177294840761], [0.6661307335475944, 0.5016938152631343, 0.9782260017236446, 0.694661987279903], [0.24691393430551242, 0.6831819397272911, 0.7379222184012622, 0.8499455724676664]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you detail the morphological profile of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not contain sufficient information to assess the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "Based on the provided data, the MTA appears to be moderate, showing some widening of the temporal horns and hippocampal volume loss.",
+    "metadata": {
+      "question_id": "How would you detail the morphological profile of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_11.png",
+      "bbox": "[[0.05059865867884199, 0.4143320661242483, 0.3517427574423506, 0.6502389205982501], [0.675030156300672, 0.4123257198944213, 0.9872263107595983, 0.6540768542562231], [0.1395285088429768, 0.6555543381263407, 0.534341358314603, 0.7923881497323285], [0.4767074388371066, 0.6576930360800327, 0.8595084950282117, 0.7939796966931209], [0.1400111620858791, 0.7312142434216163, 0.27759965037903966, 0.7969016939250699]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you record the physical manifestation of this lesion?\n\nAnswer:",
+    "chosen": "B>The question of MTA severity cannot be answered based on the context provided, as there's no specific assessment using the Medial Temporal Lobe Atrophy (MTA) scale or similar quantitative measure mentioned. Mild atrophy is described, but that's insufficient to grade MTA severity.",
+    "rejected": "A>Given the context describing mild atrophy with widening of sulci and gyral atrophy, the MTA could be considered mild to moderate in severity. Without further information, a precise grading is challenging.",
+    "metadata": {
+      "question_id": "How would you record the physical manifestation of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_77.png",
+      "bbox": "[[0.6185712976003047, 0.5775543983458197, 0.8700200812939037, 0.7528649065773217], [0.2719718856699822, 0.7123545741110598, 0.7137389610375706, 0.8592237253062278]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual composition of this lesion?\n\nAnswer:",
+    "chosen": "This question cannot be answered based on the provided information, as the context does not include any details regarding medial temporal lobe atrophy (MTA).",
+    "rejected": "The medial temporal lobe atrophy (MTA) is probably not severe given the details of the lesion, indicating preservation of temporal lobe structures. It's unlikely to be causing significant cognitive impairment.",
+    "metadata": {
+      "question_id": "What is the visual composition of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_63.png",
+      "bbox": "[[0.14991166326087674, 0.2055118147107221, 0.4481581582010816, 0.39095943157274726], [0.5268329416764189, 0.20025862856959942, 0.8772809754438602, 0.4168371100042413], [0.011470833920511223, 0.47621805712136017, 0.3651841412153146, 0.6140916931606075], [0.6067558090731167, 0.482409404308373, 0.9834967404917466, 0.6320270552765221], [0.2894959151836444, 0.6595319167908856, 0.5109480840445483, 0.790558998184039], [0.4506014038733309, 0.6616657652456838, 0.636335170005948, 0.847969430831529]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical attributes characterize this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include sufficient information to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "Based on the absence of cortical or parenchymal atrophy, interventricular space enlargement, and posterior atrophy, MTA is likely not severe.",
+    "metadata": {
+      "question_id": "What physical attributes characterize this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_51.png",
+      "bbox": "[[0.476666625306671, 0.2834231770138466, 0.7190647721251255, 0.42988083908212715], [0.18544560492180595, 0.2933794754284309, 0.4339726465075806, 0.4380949194923102], [0.09979410367540975, 0.4150851657712271, 0.4265384972794841, 0.59802468045683], [0.5083494742870525, 0.4407781818766227, 0.8606636219425193, 0.6085916815083063], [0.09165186445692795, 0.583764013344543, 0.5037409830422604, 0.8148740261672127], [0.4462877492353513, 0.5999724053152918, 0.8114344725835944, 0.7766278608751052]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you diagram the physical features of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not allow for an assessment of GCA severity. The description focuses on the physical features of a lesion, specifically noting the absence of cortical atrophy, the widening of the temporal horn of the lateral ventricle, and the absence of posterior atrophy. These findings are not diagnostic for GCA and do not provide information on its severity.",
+    "rejected": "Based on the given findings, it's not possible to determine the severity of GCA. The presence of widening of the temporal horn suggests some degree of structural change, but this is a nonspecific finding. The lack of cortical atrophy suggests that GCA may not be severe, but additional imaging and clinical correlation would be needed to confirm this.",
+    "metadata": {
+      "question_id": "How would you diagram the physical features of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_20.png",
+      "bbox": "[[0.04350844632728626, 0.5120729408116756, 0.2740275753396515, 0.6676949072119437], [0.7055792548200466, 0.5157804984543596, 0.953715256399487, 0.676280609772586], [0.06813453427448929, 0.6700473293376726, 0.41956482202883627, 0.8473263997312708], [0.5535434498606826, 0.6809270455864733, 0.9139003913817071, 0.8536530284089435]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual composition of this lesion?\n\nAnswer:",
+    "chosen": "This question cannot be answered based on the provided information, as the context does not include any details regarding medial temporal lobe atrophy (MTA).",
+    "rejected": "Given no visible cortical atrophy, posterior atrophy, or posterior cingulate and parieto-occipital sulci, the severity of MTA is likely absent or very mild.",
+    "metadata": {
+      "question_id": "What is the visual composition of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_63.png",
+      "bbox": "[[0.14991166326087674, 0.2055118147107221, 0.4481581582010816, 0.39095943157274726], [0.5268329416764189, 0.20025862856959942, 0.8772809754438602, 0.4168371100042413], [0.011470833920511223, 0.47621805712136017, 0.3651841412153146, 0.6140916931606075], [0.6067558090731167, 0.482409404308373, 0.9834967404917466, 0.6320270552765221], [0.2894959151836444, 0.6595319167908856, 0.5109480840445483, 0.790558998184039], [0.4506014038733309, 0.6616657652456838, 0.636335170005948, 0.847969430831529]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual composition of this lesion?\n\nAnswer:",
+    "chosen": "No atrophy, no widening of the temporal horn of lateral ventricle.",
+    "rejected": "No atrophy, no widening of the temporal horn of lateral ventricle. No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What is the visual composition of this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_73.png",
+      "bbox": "[[0.4830340110040252, 0.23560797345364684, 0.8280413012069394, 0.3802231053415967], [0.17967686064893068, 0.25715362737413733, 0.4247754613903348, 0.39452731279615394], [0.03861519492833236, 0.5791582402344252, 0.3166568968412519, 0.6863670851998448], [0.6583423944491371, 0.581313867043354, 0.9319736057605726, 0.7497931925805502], [0.3475457403643642, 0.603409447190409, 0.6422669846538114, 0.7134864387402886]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical details are apparent in this lesion?\n\nAnswer:",
+    "chosen": "B>Mild. The presence of mild atrophy, shown as opening of the sulci and mild shrinkage of the cerebral cortex, suggests a mild presentation of GCA.",
+    "rejected": "A>Mild. The imaging shows some opening of sulci, indicative of cortical shrinkage, which suggests atrophy.",
+    "metadata": {
+      "question_id": "What physical details are apparent in this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_5.png",
+      "bbox": "[[0.28307981114442016, 0.06453142368873478, 0.6182137683661683, 0.36381600692846094]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you characterize the textural qualities of this lesion?\n\nAnswer:",
+    "chosen": "B>The provided context doesn't give enough information to determine the severity of MTA.",
+    "rejected": "A>Based on the image, there is no MTA.",
+    "metadata": {
+      "question_id": "How would you characterize the textural qualities of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_34.png",
+      "bbox": "[[0.5121128488813871, 0.24826484415397093, 0.8029470350660903, 0.38887259632391113], [0.07983070551995028, 0.3675852166185344, 0.3277937906012776, 0.5435723828092096], [0.6601665383482066, 0.38736114141501093, 0.9569706217697003, 0.5142473989663886], [0.000544170043494975, 0.5510532302102562, 0.25168672333896763, 0.67515753129512], [0.7519936199723889, 0.5633122988290028, 1.0014331396562113, 0.7242596505985408]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_47.png",
+      "bbox": "[[0.6268508729253597, 0.46007790920297115, 0.9228104902055317, 0.6291344602105995], [0.05279349309575082, 0.4796418874410038, 0.39704227028772426, 0.5984270524388993], [0.582491233351362, 0.6307766354011054, 0.9071781969512268, 0.7640828547796308], [0.17612088346374044, 0.6876560534151238, 0.5499251970684108, 0.8485123003168874]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you explicate the lesion's visible qualities?\n\nAnswer:",
+    "chosen": "B>The observations do not indicate cortical atrophy, brain parenchyma atrophy, or enlargement of the interventricular space.",
+    "rejected": "A>Based on the MRI, the GCA appears to be mild due to the absence of cortical atrophy, brain parenchyma atrophy, and enlargement of the interventricular space.",
+    "metadata": {
+      "question_id": "How would you explicate the lesion's visible qualities?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_39.png",
+      "bbox": "[[0.4984850094257383, 0.2439401326186629, 0.8471365571629709, 0.4289772947483131], [0.15765294808722338, 0.27632492311474227, 0.4262068563182515, 0.40471022498648374], [0.030656255863144438, 0.4396966374484906, 0.36279072482278324, 0.5359938898996792], [0.6099953992447813, 0.462934887975348, 0.9386985341673884, 0.5893671517978601], [0.17080009529791002, 0.7178218149559038, 0.4833519211708125, 0.8701545352011153], [0.5251721852558529, 0.7109668927076198, 0.81353132706635, 0.8621395767468162]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual composition of this lesion?\n\nAnswer:",
+    "chosen": "B>The assessment indicates no atrophy or widening of the temporal horn of the lateral ventricle.",
+    "rejected": "A>Based on the information provided, there is a low severity of medial temporal atrophy (MTA)",
+    "metadata": {
+      "question_id": "What is the visual composition of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_73.png",
+      "bbox": "[[0.4830340110040252, 0.23560797345364684, 0.8280413012069394, 0.3802231053415967], [0.17967686064893068, 0.25715362737413733, 0.4247754613903348, 0.39452731279615394], [0.03861519492833236, 0.5791582402344252, 0.3166568968412519, 0.6863670851998448], [0.6583423944491371, 0.581313867043354, 0.9319736057605726, 0.7497931925805502], [0.3475457403643642, 0.603409447190409, 0.6422669846538114, 0.7134864387402886]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "The provided description does not offer sufficient details to evaluate the severity of medial temporal atrophy (MTA).",
+    "rejected": "Based on the absence of cortical atrophy, brain parenchyma atrophy, interventricular space enlargement, posterior atrophy, and posterior cingulate and parieto-occipital sulci, MTA is likely not severe.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_79.png",
+      "bbox": "[[0.46879959507776015, 0.28707823362804497, 0.7275371251693985, 0.42331182470766837], [0.18339162181467988, 0.29989754191118817, 0.43270226685435176, 0.435795525705806], [0.10388010916049137, 0.4182921640418983, 0.4230584028290525, 0.5900021592584357], [0.4885910866394442, 0.44817512573062873, 0.8746063675425036, 0.6025877427563525], [0.10308511120110937, 0.5898090845759797, 0.4934667151193268, 0.8161691840709451], [0.4331531842414683, 0.594290422824988, 0.8243829840916754, 0.7741754080774964]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you detail the visual presentation of this lesion?\n\nAnswer:",
+    "chosen": "The severity is indicated by mild parietal cortical atrophy observed in the brain MRI.",
+    "rejected": "Moderate; it is likely a progressive decline that may eventually impact cognitive function and require neurological intervention.",
+    "metadata": {
+      "question_id": "How would you detail the visual presentation of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_6.png",
+      "bbox": "[[0.16855229304752717, 0.334125223370723, 0.3314094847922287, 0.5768835490646907], [0.2516074081612355, 0.7022852440443078, 0.7028259064352873, 0.9734790429161653]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "B>The description of the visual structure indicates an absence of posterior atrophy, posterior cingulate and parieto-occipital sulci abnormalities. This does not provide information on the presence or absence of Koedam.",
+    "rejected": "A>No posterior atrophy, no posterior cingulate and parieto-occipital sulci, so Koedam cannot be present.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_79.png",
+      "bbox": "[[0.46879959507776015, 0.28707823362804497, 0.7275371251693985, 0.42331182470766837], [0.18339162181467988, 0.29989754191118817, 0.43270226685435176, 0.435795525705806], [0.10388010916049137, 0.4182921640418983, 0.4230584028290525, 0.5900021592584357], [0.4885910866394442, 0.44817512573062873, 0.8746063675425036, 0.6025877427563525], [0.10308511120110937, 0.5898090845759797, 0.4934667151193268, 0.8161691840709451], [0.4331531842414683, 0.594290422824988, 0.8243829840916754, 0.7741754080774964]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "The provided information indicates the absence of posterior atrophy and abnormalities in the posterior cingulate and parieto-occipital sulci. This suggests that Koedam's severity, based on these specific markers, appears to be low, or at least not indicated by these anatomical features.",
+    "rejected": "Koedam's severity appears low, due to the absence of posterior atrophy and abnormalities in the posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_50.png",
+      "bbox": "[[0.5092174442198192, 0.24198001911566874, 0.8520092025872357, 0.39984475491576577], [0.17370834256457693, 0.2507292232031136, 0.4336384804450639, 0.37543689836465904], [0.036214206622465855, 0.4524049842764699, 0.3052524737942842, 0.5705599711433342], [0.6703423621182731, 0.46589164483765794, 0.9212626369171185, 0.6052699062228887], [0.0734230524837067, 0.6221542046492047, 0.31303740442955297, 0.7405658747452515], [0.5539055342426334, 0.6360888434763623, 0.8959225451248277, 0.8019386315433608]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "Based on the visual analysis, there is no evidence of posterior atrophy, or abnormalities in the posterior cingulate and parieto-occipital sulci, which suggests Koedam's severity is low.",
+    "rejected": "No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_79.png",
+      "bbox": "[[0.46879959507776015, 0.28707823362804497, 0.7275371251693985, 0.42331182470766837], [0.18339162181467988, 0.29989754191118817, 0.43270226685435176, 0.435795525705806], [0.10388010916049137, 0.4182921640418983, 0.4230584028290525, 0.5900021592584357], [0.4885910866394442, 0.44817512573062873, 0.8746063675425036, 0.6025877427563525], [0.10308511120110937, 0.5898090845759797, 0.4934667151193268, 0.8161691840709451], [0.4331531842414683, 0.594290422824988, 0.8243829840916754, 0.7741754080774964]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visible composition of this lesion?\n\nAnswer:",
+    "chosen": "The severity of Koedam is reflected in the marked sulcal widening observed in the posterior cingulate and parieto-occipital sulci, alongside knife-blade gyral atrophy. This suggests a considerable degree of structural change in these areas.",
+    "rejected": "Koedam appears to be devastating given the marked sulcal widening and knife-blade gyral atrophy, potentially indicating a rapid and severe neurodegenerative process.",
+    "metadata": {
+      "question_id": "What is the visible composition of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_72.png",
+      "bbox": "[[0.10981872625405133, 0.6016092039536162, 0.49002021061441087, 0.8015343669295522], [0.46589488146973773, 0.6073750970102176, 0.8742952415154905, 0.8085579090116952]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable characteristics typify this lesion?\n\nAnswer:",
+    "chosen": "The identified mild atrophy, characterized by the opening of sulci and slight cerebral cortex shrinkage, suggests a mild presentation of GCA.",
+    "rejected": "The patient is suffering from an aggressive form of GCA. This is confirmed by the mild atrophy that is typified by the opening of the sulci and mild shrinkage of the cerebral cortex",
+    "metadata": {
+      "question_id": "What observable characteristics typify this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_43.png",
+      "bbox": "[[0.38050218743281483, 0.11188071854739486, 0.6250471858127359, 0.31208325941414183], [0.1157053427103697, 0.2387463765045919, 0.28885150260600206, 0.7299250088854596], [0.3974273677546379, 0.6762359439023594, 0.6214852429576486, 0.8842468133918036]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you identify the visual hallmarks of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not give enough information to evaluate the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "Based on the identified infection areas, the severity of MTA appears to be moderate, as the infection could affect the temporal lobes and lead to some degree of atrophy.",
+    "metadata": {
+      "question_id": "How would you identify the visual hallmarks of this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_4.png",
+      "bbox": "[[0.04920233523985968, 0.4863607358724227, 0.3224860031748551, 0.6732916936604509], [0.6759703621114681, 0.541215609351505, 0.967255580078236, 0.7336651171671428], [0.21309413901677307, 0.727738317366296, 0.7954997203305765, 0.8412925281733312]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you depict the morphological aspects of this lesion?\n\nAnswer:",
+    "chosen": "The context does not provide sufficient information to assess the severity of Koedam. Koedam refers to a region on brain MRI that is related to memory and orientation and it is not described in the findings.",
+    "rejected": "Koedam is significantly affected, indicating severe cognitive impairment. The degree of atrophy and sulci opening suggests advanced neurodegenerative changes, possibly indicative of severe dementia.",
+    "metadata": {
+      "question_id": "How would you depict the morphological aspects of this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_21.png",
+      "bbox": "[[0.07656875221572401, 0.5678343354906443, 0.41972615985397493, 0.784220683872288], [0.5973193905068042, 0.5624843733166279, 0.9176904185772995, 0.7706873113417259], [0.3777132775404229, 0.6765054172988337, 0.6469848099461345, 0.7827240100810705]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you specify the visible traits of this lesion?\n\nAnswer:",
+    "chosen": "The context provided does not include information necessary to assess the severity of medial temporal atrophy.",
+    "rejected": "Given that there is no evidence of cortical atrophy, brain parenchyma atrophy, or interventricular space enlargement, the MTA is probably not severe",
+    "metadata": {
+      "question_id": "How would you specify the visible traits of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_19.png",
+      "bbox": "[[0.4697600170775992, 0.2810296248511884, 0.7240435326106817, 0.4261697050043732], [0.16572238684716112, 0.2911170997298723, 0.4479777025040931, 0.4359628016653713], [0.10953244082683412, 0.41000925266211247, 0.4159439686464199, 0.5980380035355624], [0.5019121679131628, 0.44182418656587247, 0.8636341002321881, 0.604561078344988], [0.09356695509188628, 0.5880873772317986, 0.5004241544524043, 0.812083741405563], [0.43214145862605846, 0.5966601209834588, 0.8231316652309681, 0.770710275562899]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "B>The visual features point to temporal horn widening of the lateral ventricle.",
+    "rejected": "A>Widening of the temporal horn of lateral ventricle indicates advanced MTA.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_65.png",
+      "bbox": "[[0.02997915131336018, 0.5174066315596405, 0.28629531631806315, 0.6639087582398263], [0.7052319388257327, 0.5181159908091273, 0.9542403481727663, 0.6789200010698037], [0.06820096195269693, 0.6762980597966637, 0.4131403413659515, 0.8476019869030629], [0.5467929078687259, 0.6823485613184183, 0.9140923390957918, 0.8512173939917677]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you articulate the physical manifestation of this lesion?\n\nAnswer:",
+    "chosen": "Without evidence of cortical or posterior atrophy, or any abnormalities in the posterior cingulate and parieto-occipital sulci, the severity of medial temporal atrophy (MTA) cannot be determined from the provided context.",
+    "rejected": "Based on the description, the patient likely has Alzheimer's.",
+    "metadata": {
+      "question_id": "How would you articulate the physical manifestation of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_76.png",
+      "bbox": "[[0.16346277107638968, 0.20753563731308272, 0.43148196414426426, 0.39779870689012203], [0.5184866944098856, 0.2023619719179642, 0.8816465321925114, 0.41939973306354156], [0.025133460618739674, 0.4794527259460129, 0.35176563127258564, 0.6190358462573909], [0.617996828297307, 0.4826445502691215, 0.9759158677889722, 0.6388914438575587], [0.2930727742105618, 0.6515859364825455, 0.5150345155761308, 0.7932719743228613], [0.436349257217456, 0.6676484213821441, 0.6477117984654649, 0.8468769417489638]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable particularities characterize this lesion?\n\nAnswer:",
+    "chosen": "Mild atrophy: substantial widening of sulci.",
+    "rejected": "Mild atrophy substantial widening of sulci. Mild sulcal widening, mild gyral atrophy.",
+    "metadata": {
+      "question_id": "What observable particularities characterize this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_58.png",
+      "bbox": "[[0.6016333922755035, 0.5790665254869308, 0.883681131960691, 0.7575415793405998], [0.27524552228002264, 0.7100192647900256, 0.7075864235288263, 0.8542683022316767]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the pictorial description of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Mild parietal cortical atrophy, mild widening of posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What is the pictorial description of this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_94.png",
+      "bbox": "[[0.052113635013010515, 0.5239614913621553, 0.5257615034454652, 0.8758558010474873], [0.5191110447432697, 0.5651273792173092, 0.926195925945244, 0.8652404815289099]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the dermatological presentation of this lesion?\n\nAnswer:",
+    "chosen": "I cannot determine the severity of GCA from the information given.",
+    "rejected": "GCA is likely severe given the brain atrophy, and immediate high-dose steroids are indicated.",
+    "metadata": {
+      "question_id": "What is the dermatological presentation of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_32.png",
+      "bbox": "[[0.3330267509672983, 0.2021864443656843, 0.5442609929154347, 0.4421413767682585]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "The presence of temporal horn widening of the lateral ventricles is suggestive of moderate medial temporal atrophy (MTA).",
+    "rejected": "There is some temporal horn widening of the lateral ventricle, which may indicate slight medial temporal atrophy.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_65.png",
+      "bbox": "[[0.02997915131336018, 0.5174066315596405, 0.28629531631806315, 0.6639087582398263], [0.7052319388257327, 0.5181159908091273, 0.9542403481727663, 0.6789200010698037], [0.06820096195269693, 0.6762980597966637, 0.4131403413659515, 0.8476019869030629], [0.5467929078687259, 0.6823485613184183, 0.9140923390957918, 0.8512173939917677]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the surface morphology of this lesion?\n\nAnswer:",
+    "chosen": "The imaging shows mild atrophy characterized by opening of sulci and mild shrinkage of the cerebral cortex. This suggests GCA is present to a mild degree.",
+    "rejected": "The severity of GCA appears to be only in an early stage, presenting as mild atrophy affecting the sulci and cerebral cortex. The features are minimal.",
+    "metadata": {
+      "question_id": "What is the surface morphology of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_86.png",
+      "bbox": "[[0.3128381243339237, 0.06632854414743522, 0.5018449734543086, 0.3018208985921351], [0.09809483413618322, 0.26324140938749796, 0.29287097808453333, 0.5900999424416992], [0.26382269623859267, 0.6698837805146074, 0.4361383834399647, 0.9135283181728352]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical details are apparent in this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy.",
+    "rejected": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What physical details are apparent in this lesion?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_70.png",
+      "bbox": "[[0.5113208057617508, 0.24525545207597566, 0.8539010694865861, 0.39883047457160475], [0.17298655292717974, 0.2585662531461522, 0.4326471247743849, 0.3729495550642477], [0.04115802539887929, 0.45098736623796276, 0.3088087808367757, 0.5727760872739914], [0.6659378619503847, 0.4607557506883251, 0.9301132684089396, 0.6018671431828424], [0.08216753090853154, 0.6278385051196189, 0.30463451045290013, 0.7423326535551448], [0.5383171562083913, 0.6330520367335525, 0.9058074848861253, 0.8080543803890338]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable parameters define this lesion?\n\nAnswer:",
+    "chosen": "Based on the observable parameters, the GCA appears to be characterized by mild atrophy, evidenced by the opening of sulci and mild shrinkage of the cerebral cortex. This indicates an early stage of the condition.",
+    "rejected": "The severity of GCA, based on the provided findings, shows mild atrophy, demonstrated by the opening of the sulci and shrinkage of the cerebral cortex. Mild atrophy may suggest possible cognitive decline.",
+    "metadata": {
+      "question_id": "What observable parameters define this lesion?",
+      "variation_id": 1,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_90.png",
+      "bbox": "[[0.05328962087731014, 0.4813028039462883, 0.3310735802909566, 0.6923008986377982], [0.6811123374449461, 0.5011577120378344, 0.963232974271579, 0.6960846506717834], [0.24570297239489558, 0.689631667629935, 0.7436635499236034, 0.842946529042629]]"
+    }
+  },
+  {
+    "prompt": "Question: What morphological details can you observe in this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include sufficient information to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "The mild atrophy and opening of sulci indicate early Alzheimer's disease. The MTA is likely mild to moderate.",
+    "metadata": {
+      "question_id": "What morphological details can you observe in this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_78.png",
+      "bbox": "[[0.5167775392551851, 0.24271714127962732, 0.7999218987386026, 0.385342266916936], [0.07398675462023943, 0.3676400743479166, 0.32912170140209734, 0.5464066275022657], [0.6633328474084196, 0.3881682053614549, 0.9532448076871842, 0.5175324277949854], [-0.007620090952016573, 0.5524310256458771, 0.26500781818036134, 0.6718821178325081], [0.7479665212574054, 0.5699141781710129, 1.003060450655794, 0.7259896734743946]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the surface morphology of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex. Mild widening of posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What is the surface morphology of this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_86.png",
+      "bbox": "[[0.3128381243339237, 0.06632854414743522, 0.5018449734543086, 0.3018208985921351], [0.09809483413618322, 0.26324140938749796, 0.29287097808453333, 0.5900999424416992], [0.26382269623859267, 0.6698837805146074, 0.4361383834399647, 0.9135283181728352]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual profile of this lesion?\n\nAnswer:",
+    "chosen": "B>The lesion exhibits mild atrophy, evidenced by the opening of sulci and slight shrinkage of the cerebral cortex.",
+    "rejected": "A>Given the presence of mild atrophy, this indicates the patient is likely to experience mild cognitive impairment.",
+    "metadata": {
+      "question_id": "What is the visual profile of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_68.png",
+      "bbox": "[[0.3723820442327725, 0.11191615898757867, 0.6354651258091423, 0.3162416810038462], [0.11801140947690175, 0.2362811657883498, 0.28934228448786103, 0.7287397561592401], [0.3803128863980556, 0.6737213502644653, 0.6317651511875106, 0.8898899239906359]]"
+    }
+  },
+  {
+    "prompt": "Question: What morphological nuances can be seen in this lesion?\n\nAnswer:",
+    "chosen": "B>Based on the morphological nuances observed, there is no cortical atrophy, indicating that GCA severity cannot be determined based on the provided findings alone.",
+    "rejected": "A>Based on the information, the GCA appears to be mild since there is no cortical atrophy.",
+    "metadata": {
+      "question_id": "What morphological nuances can be seen in this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_24.png",
+      "bbox": "[[0.039393901931870215, 0.47380960592608545, 0.33010011232972947, 0.6248949459891436], [0.6373012975743465, 0.48824830708597194, 0.9416276120249257, 0.6359064490685691], [0.538208795949958, 0.6539376707732736, 0.8678039816391313, 0.8049985360059946], [0.11006334210891128, 0.6516642669284741, 0.4383697935290368, 0.8091079751429993]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical details are apparent in this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not include sufficient information to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "The severity of MTA appears moderate, given the mild atrophy and opening of sulci.",
+    "metadata": {
+      "question_id": "What physical details are apparent in this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_15.png",
+      "bbox": "[[0.05495605482226848, 0.341426872262928, 0.4049473169335358, 0.6219005998134126], [0.6374532987385583, 0.3420160445855514, 0.9816741049774875, 0.5237475574637979], [0.5898101008078607, 0.7487515831761801, 0.867603798414405, 0.8782199761283944], [0.23004701939922617, 0.7587564766339905, 0.49393038358186, 0.9029009443021933]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the dermatological presentation of this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Moderate loss of hippocampal volume (decrease in height).",
+    "metadata": {
+      "question_id": "What is the dermatological presentation of this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_32.png",
+      "bbox": "[[0.3330267509672983, 0.2021864443656843, 0.5442609929154347, 0.4421413767682585]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "Based on the MRI analysis, there are no signs of posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci.",
+    "rejected": "Based on the analysis, the MRI reveals no posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci, which is an indicator of a severe neurological issue.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_93.png",
+      "bbox": "[[0.489650200443162, 0.20291447277685748, 0.8077513356095235, 0.3616424348547014], [0.1279081516382072, 0.2434430371687305, 0.4239370503725769, 0.38552680346426], [0.06525337689199477, 0.39859164435503086, 0.3526905215093688, 0.5794453205564432], [0.6571844660237974, 0.410842658736748, 0.9573650384678205, 0.6079252955420101], [0.043430096295729866, 0.6306717507856056, 0.3216947475589123, 0.7899968371779773], [0.5882540192096402, 0.6650843942483351, 0.9360268119862014, 0.8189088137252142]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you explicate the lesion's visible qualities?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you explicate the lesion's visible qualities?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_39.png",
+      "bbox": "[[0.4984850094257383, 0.2439401326186629, 0.8471365571629709, 0.4289772947483131], [0.15765294808722338, 0.27632492311474227, 0.4262068563182515, 0.40471022498648374], [0.030656255863144438, 0.4396966374484906, 0.36279072482278324, 0.5359938898996792], [0.6099953992447813, 0.462934887975348, 0.9386985341673884, 0.5893671517978601], [0.17080009529791002, 0.7178218149559038, 0.4833519211708125, 0.8701545352011153], [0.5251721852558529, 0.7109668927076198, 0.81353132706635, 0.8621395767468162]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you detail the morphological profile of this lesion?\n\nAnswer:",
+    "chosen": "The MRI shows no posterior atrophy, no posterior cingulate and parieto-occipital sulci, which are features sometimes seen in Koedam. However, this alone is not sufficient to determine the severity of Koedam. Other clinical findings are needed for a complete assessment.",
+    "rejected": "The MRI shows no posterior atrophy, no posterior cingulate and parieto-occipital sulci. Therefore, Koedam is mild and of little concern.",
+    "metadata": {
+      "question_id": "How would you detail the morphological profile of this lesion?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_11.png",
+      "bbox": "[[0.05059865867884199, 0.4143320661242483, 0.3517427574423506, 0.6502389205982501], [0.675030156300672, 0.4123257198944213, 0.9872263107595983, 0.6540768542562231], [0.1395285088429768, 0.6555543381263407, 0.534341358314603, 0.7923881497323285], [0.4767074388371066, 0.6576930360800327, 0.8595084950282117, 0.7939796966931209], [0.1400111620858791, 0.7312142434216163, 0.27759965037903966, 0.7969016939250699]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you convey the morphological nature of this lesion?\n\nAnswer:",
+    "chosen": "Mild atrophy: opening of sulci.",
+    "rejected": "The patient exhibits clear indications of mild atrophy with an opening of the sulci. Their brain is likely smaller than normal for their age group.",
+    "metadata": {
+      "question_id": "How would you convey the morphological nature of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_75.png",
+      "bbox": "[[0.3862728232903308, 0.09786855961462003, 0.7115513938627326, 0.3622700747384818], [0.06766936294835496, 0.6375397419125375, 0.3531228062737397, 0.9047304197809491]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical attributes characterize this lesion?\n\nAnswer:",
+    "chosen": "Based on the MRI, there is no cortical atrophy, brain parenchyma atrophy, and no enlargement of the interventricular space.",
+    "rejected": "The MRI shows that the patient's brain is healthy, with no indications of atrophy or ventricular enlargement. GCA is not severe in this patient.",
+    "metadata": {
+      "question_id": "What physical attributes characterize this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_51.png",
+      "bbox": "[[0.476666625306671, 0.2834231770138466, 0.7190647721251255, 0.42988083908212715], [0.18544560492180595, 0.2933794754284309, 0.4339726465075806, 0.4380949194923102], [0.09979410367540975, 0.4150851657712271, 0.4265384972794841, 0.59802468045683], [0.5083494742870525, 0.4407781818766227, 0.8606636219425193, 0.6085916815083063], [0.09165186445692795, 0.583764013344543, 0.5037409830422604, 0.8148740261672127], [0.4462877492353513, 0.5999724053152918, 0.8114344725835944, 0.7766278608751052]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the dermatological presentation of this lesion?\n\nAnswer:",
+    "chosen": "The provided context does not contain information regarding medial temporal lobe atrophy (MTA); therefore, it is not possible to determine the severity of MTA based on the information given.",
+    "rejected": "MTA is not present.",
+    "metadata": {
+      "question_id": "What is the dermatological presentation of this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_98.png",
+      "bbox": "[[0.6166702939301393, 0.4684016519778547, 0.9314500799640041, 0.6214739818600445], [0.06105422873877353, 0.47934119313046997, 0.3859200467193636, 0.5914195930321929], [0.5895017299763303, 0.6393331626485926, 0.8928072368535024, 0.7602595231379823], [0.1830769811060063, 0.6884365333290583, 0.5397980844374609, 0.8466278474829805]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you characterize the textural qualities of this lesion?\n\nAnswer:",
+    "chosen": "The MRI indicates no signs of cortical atrophy, brain parenchyma atrophy, or interventricular space enlargement. Based solely on these findings, the scan shows no signs of GCA.",
+    "rejected": "The MRI scan shows clear indications of mild GCA, but the absence of cortical atrophy, brain parenchyma atrophy, or interventricular space enlargement is not definitive. The patient should begin treatment immediately.",
+    "metadata": {
+      "question_id": "How would you characterize the textural qualities of this lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_59.png",
+      "bbox": "[[0.5027935247538939, 0.23130535099671362, 0.8107669772707952, 0.3813475481833111], [0.17519144084350052, 0.25524764401103206, 0.4285914085928044, 0.3961047265641638], [0.05344836951680543, 0.5750568419194588, 0.3037453068148491, 0.6881908003499551], [0.6680227062113333, 0.5811436139506855, 0.9285329622863583, 0.746496645853529], [0.35783640657707694, 0.6076051143738507, 0.631806952434163, 0.7157713163037897]]"
+    }
+  },
+  {
+    "prompt": "Question: What physical details are apparent in this lesion?\n\nAnswer:",
+    "chosen": "The provided information does not contain any details regarding medial temporal atrophy (MTA); therefore, the severity of MTA cannot be determined from the given context.",
+    "rejected": "The MTA is likely mild, given the absence of cortical atrophy and posterior atrophy.",
+    "metadata": {
+      "question_id": "What physical details are apparent in this lesion?",
+      "variation_id": 3,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_70.png",
+      "bbox": "[[0.5113208057617508, 0.24525545207597566, 0.8539010694865861, 0.39883047457160475], [0.17298655292717974, 0.2585662531461522, 0.4326471247743849, 0.3729495550642477], [0.04115802539887929, 0.45098736623796276, 0.3088087808367757, 0.5727760872739914], [0.6659378619503847, 0.4607557506883251, 0.9301132684089396, 0.6018671431828424], [0.08216753090853154, 0.6278385051196189, 0.30463451045290013, 0.7423326535551448], [0.5383171562083913, 0.6330520367335525, 0.9058074848861253, 0.8080543803890338]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "B>The image shows mild atrophy, characterized by some opening of the sulci and mild shrinkage of the cerebral cortex, indicating an early stage of GCA.",
+    "rejected": "A>Mild atrophy: opening of sulci, mild shrinkage of cerebral cortex.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_30.png",
+      "bbox": "[[0.05601237175454227, 0.48072205142850083, 0.332680821747479, 0.690177294840761], [0.6661307335475944, 0.5016938152631343, 0.9782260017236446, 0.694661987279903], [0.24691393430551242, 0.6831819397272911, 0.7379222184012622, 0.8499455724676664]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable particularities characterize this lesion?\n\nAnswer:",
+    "chosen": "B>The MRI shows mild atrophy with notable widening of the sulci.",
+    "rejected": "A>The MRI shows significant atrophy suggesting severe GCA due to the extensive damage.",
+    "metadata": {
+      "question_id": "What observable particularities characterize this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_58.png",
+      "bbox": "[[0.6016333922755035, 0.5790665254869308, 0.883681131960691, 0.7575415793405998], [0.27524552228002264, 0.7100192647900256, 0.7075864235288263, 0.8542683022316767]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you journal the morphological details of this lesion?\n\nAnswer:",
+    "chosen": "B>The provided images do not show evidence of cortical or brain parenchyma atrophy, nor do they show enlargement of the interventricular space. These findings do not directly correlate with the severity of GCA and the images may not be sufficient to draw conclusions about GCA severity.",
+    "rejected": "A>No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. The presence of these factors suggests a low level of GCA severity, but further examination is needed to confirm.",
+    "metadata": {
+      "question_id": "How would you journal the morphological details of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_71.png",
+      "bbox": "[[0.05172143163541787, 0.5135573519221267, 0.32098616486339326, 0.6681439793966276], [0.6791065143858614, 0.5134180123405054, 0.9327792568233493, 0.6603201359583183], [0.2790832829352956, 0.5364951892389042, 0.49162435831149, 0.6313829449007682], [0.4720298923679715, 0.536775754705894, 0.6987181069361394, 0.6317256144913539]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable parameters define this lesion?\n\nAnswer:",
+    "chosen": "Mild Koedam is demonstrated through widening of the posterior cingulate and parieto-occipital sulci.",
+    "rejected": "Koedam severity: widened posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What observable parameters define this lesion?",
+      "variation_id": 2,
+      "metric": "helpful",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.5,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_90.png",
+      "bbox": "[[0.05328962087731014, 0.4813028039462883, 0.3310735802909566, 0.6923008986377982], [0.6811123374449461, 0.5011577120378344, 0.963232974271579, 0.6960846506717834], [0.24570297239489558, 0.689631667629935, 0.7436635499236034, 0.842946529042629]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you illustrate this lesion's presentation?\n\nAnswer:",
+    "chosen": "The absence of posterior atrophy or abnormalities in the posterior cingulate and parieto-occipital sulci might suggest a less severe presentation of Koedam's syndrome; however, this evaluation is limited to the features described.",
+    "rejected": "Koedam's severity is indicated by the absence of posterior atrophy, and there are no posterior cingulate and parieto-occipital sulci abnormalities.",
+    "metadata": {
+      "question_id": "How would you illustrate this lesion's presentation?",
+      "variation_id": 2,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_50.png",
+      "bbox": "[[0.5092174442198192, 0.24198001911566874, 0.8520092025872357, 0.39984475491576577], [0.17370834256457693, 0.2507292232031136, 0.4336384804450639, 0.37543689836465904], [0.036214206622465855, 0.4524049842764699, 0.3052524737942842, 0.5705599711433342], [0.6703423621182731, 0.46589164483765794, 0.9212626369171185, 0.6052699062228887], [0.0734230524837067, 0.6221542046492047, 0.31303740442955297, 0.7405658747452515], [0.5539055342426334, 0.6360888434763623, 0.8959225451248277, 0.8019386315433608]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual landscape presented by this lesion?\n\nAnswer:",
+    "chosen": "Without further information, the severity of MTA cannot be determined from the provided context.",
+    "rejected": "Based on the degree of cortical shrinkage, MTA is present, and likely progressing gradually.",
+    "metadata": {
+      "question_id": "What is the visual landscape presented by this lesion?",
+      "variation_id": 3,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_30.png",
+      "bbox": "[[0.05601237175454227, 0.48072205142850083, 0.332680821747479, 0.690177294840761], [0.6661307335475944, 0.5016938152631343, 0.9782260017236446, 0.694661987279903], [0.24691393430551242, 0.6831819397272911, 0.7379222184012622, 0.8499455724676664]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you journal the morphological details of this lesion?\n\nAnswer:",
+    "chosen": "B>Based on the findings, there is no atrophy, no widening of the temporal horn of the lateral ventricle, no cortical atrophy, no brain parenchyma atrophy, and no interventricular space enlargement. Therefore, there is no evidence of medial temporal lobe atrophy (MTA). Clinical correlation is recommended.",
+    "rejected": "A>Based on the provided information, there is no evidence of atrophy or widening of the temporal horn of the lateral ventricle; therefore, it appears the patient has no or minimal Medial Temporal Atrophy (MTA). Clinical judgment is needed to access the image.",
+    "metadata": {
+      "question_id": "How would you journal the morphological details of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_71.png",
+      "bbox": "[[0.05172143163541787, 0.5135573519221267, 0.32098616486339326, 0.6681439793966276], [0.6791065143858614, 0.5134180123405054, 0.9327792568233493, 0.6603201359583183], [0.2790832829352956, 0.5364951892389042, 0.49162435831149, 0.6313829449007682], [0.4720298923679715, 0.536775754705894, 0.6987181069361394, 0.6317256144913539]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visible composition of this lesion?\n\nAnswer:",
+    "chosen": "Marked sulcal widening of posterior cingulate and parieto-occipital sulci, knife-blade gyral atrophy.",
+    "rejected": "Moderate atrophy volume loss of gyri, substantial widening of sulci. Marked sulcal widening of posterior cingulate and parieto-occipital sulci, knife-blade gyral atrophy.",
+    "metadata": {
+      "question_id": "What is the visible composition of this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_72.png",
+      "bbox": "[[0.10981872625405133, 0.6016092039536162, 0.49002021061441087, 0.8015343669295522], [0.46589488146973773, 0.6073750970102176, 0.8742952415154905, 0.8085579090116952]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the superficial appearance of this lesion?\n\nAnswer:",
+    "chosen": "B>Mild atrophy opening of sulci, mild shrinkage of cerebral cortex, which reflects mild severity of GCA.",
+    "rejected": "A>Mild atrophy: opening of sulci, mild shrinkage of cerebral cortex reflects very severe GCA.",
+    "metadata": {
+      "question_id": "What is the superficial appearance of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_54.png",
+      "bbox": "[[0.29486642125951523, 0.06889270600214051, 0.6147782126571965, 0.36909830423032797]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you analyze the visual structure of this lesion?\n\nAnswer:",
+    "chosen": "B>The context does not provide sufficient information to determine the severity of Koedam.",
+    "rejected": "A>Based on the information, Koedam is severe, due to the significant contamination region and widening of the temporal horn.",
+    "metadata": {
+      "question_id": "How would you analyze the visual structure of this lesion?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_35.png",
+      "bbox": "[[0.35773013722528785, 0.548445990305447, 0.6018493736056867, 0.7821696459775951]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you diagram the physical features of this lesion?\n\nAnswer:",
+    "chosen": "Widening of the temporal horn of lateral ventricle.",
+    "rejected": "No cortical atrophy. Widening of the temporal horn of lateral ventricle. No posterior atrophy, no posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "How would you diagram the physical features of this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_20.png",
+      "bbox": "[[0.04350844632728626, 0.5120729408116756, 0.2740275753396515, 0.6676949072119437], [0.7055792548200466, 0.5157804984543596, 0.953715256399487, 0.676280609772586], [0.06813453427448929, 0.6700473293376726, 0.41956482202883627, 0.8473263997312708], [0.5535434498606826, 0.6809270455864733, 0.9139003913817071, 0.8536530284089435]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the visual identity of this lesion?\n\nAnswer:",
+    "chosen": "Based on the provided context, it is not possible to determine the severity of medial temporal lobe atrophy (MTA).",
+    "rejected": "Based on the provided context, the severity of MTA appears moderate.",
+    "metadata": {
+      "question_id": "What is the visual identity of this lesion?",
+      "variation_id": 3,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_60.png",
+      "bbox": "[[0.31109396715685916, 0.06924820415517292, 0.5038059245656624, 0.3031625328208435], [0.11512606674323916, 0.260622636554098, 0.2823607005621333, 0.5936289253773016], [0.26194892857780466, 0.6658142584221639, 0.43246680215611805, 0.9141280467541171]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you describe the visible aspects of this lesion?\n\nAnswer:",
+    "chosen": "The observed imaging features include no cortical atrophy, brain parenchyma atrophy, or interventricular space enlargement. This would suggest the absence of severe global cerebral atrophy (GCA).",
+    "rejected": "Based on the imaging features described, there is no observed cortical or parenchymal atrophy, nor any enlargement of the ventricles. Therefore, GCA is not present.",
+    "metadata": {
+      "question_id": "How would you describe the visible aspects of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_81.png",
+      "bbox": "[[0.7130168164291135, 0.5022859521251741, 0.8867814003007941, 0.6824585190540108], [0.06916272170732582, 0.5071965007943985, 0.28769529459352977, 0.6918364929561264], [0.12379974927899703, 0.6595518204527793, 0.4918348741127523, 0.8120047634951425], [0.428483890365083, 0.6524339997543518, 0.8637060309679596, 0.8118177415304955]]"
+    }
+  },
+  {
+    "prompt": "Question: What is the morphological description of this lesion?\n\nAnswer:",
+    "chosen": "B>The description indicates an absence of posterior atrophy, specifically mentioning no involvement of the posterior cingulate and parieto-occipital sulci.",
+    "rejected": "A>No posterior atrophy, no posterior cingulate and parieto-occipital sulci; Koedam cannot be present",
+    "metadata": {
+      "question_id": "What is the morphological description of this lesion?",
+      "variation_id": 2,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_16.png",
+      "bbox": "[[0.5196943823476744, 0.31785517083914594, 0.832190061771579, 0.49149070437991094], [0.1375406250618419, 0.33219760825515604, 0.43363482074582516, 0.5266129549516735], [0.5598430176533841, 0.48773151348824295, 0.9477693732564771, 0.6573017591702244], [0.05869217822786215, 0.5599030293896882, 0.42292632455509327, 0.6737797236817771], [0.5123853923677713, 0.6591383375203091, 0.8782036050224848, 0.8150689061829246], [0.11900719530855952, 0.6721850885605887, 0.5147571997059618, 0.8028778904006527]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual elements define this particular lesion?\n\nAnswer:",
+    "chosen": "The GCA appears to be at a moderate stage, displaying loss of volume in the gyri and a widening of the sulci.",
+    "rejected": "The GCA has progressed to a severe stage, showing significant gyral volume loss and extensive widening of the sulci.",
+    "metadata": {
+      "question_id": "What visual elements define this particular lesion?",
+      "variation_id": 1,
+      "metric": "harmless",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.5,
+        "harmless": 0.8,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_96.png",
+      "bbox": "[[0.11628974116175018, 0.6035245085168042, 0.4829406164355334, 0.8066095325511773], [0.47357801699126895, 0.6069024020134113, 0.8732717110128296, 0.8053755928925541]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual elements define this particular lesion?\n\nAnswer:",
+    "chosen": "Marked sulcal widening of posterior cingulate and parieto-occipital sulci, knife-blade gyral atrophy.",
+    "rejected": "Moderate atrophy volume loss of gyri, substantial widening of sulci. Marked sulcal widening of posterior cingulate and parieto-occipital sulci, knife-blade gyral atrophy.",
+    "metadata": {
+      "question_id": "What visual elements define this particular lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_96.png",
+      "bbox": "[[0.11628974116175018, 0.6035245085168042, 0.4829406164355334, 0.8066095325511773], [0.47357801699126895, 0.6069024020134113, 0.8732717110128296, 0.8053755928925541]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual markers are present in this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Mild atrophy opening of sulci, enlarged lateral ventricular body width.",
+    "metadata": {
+      "question_id": "What visual markers are present in this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_80.png",
+      "bbox": "[[0.21977332300469615, 0.475520579270077, 0.4695882171591352, 0.7271919769872122]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you outline the physical features of this lesion?\n\nAnswer:",
+    "chosen": "No cortical atrophy.",
+    "rejected": "Based on the assessment, there is no cortical atrophy detected, meaning that GCA (Giant Cell Arteritis) is mild. There are no signs of the disease progressing.",
+    "metadata": {
+      "question_id": "How would you outline the physical features of this lesion?",
+      "variation_id": 1,
+      "metric": "honest",
+      "rating_type": "completion",
+      "scores": {
+        "helpful": 0.5,
+        "honest": 0.8,
+        "harmless": 0.5,
+        "composite": 0.8
+      },
+      "language": "en",
+      "image_path": "images\\img_61.png",
+      "bbox": "[[0.6192944829472734, 0.4686793475769315, 0.9213911481353554, 0.6253715990352087], [0.05185154327104415, 0.47650965424187985, 0.38980674202447246, 0.5943322097333649], [0.5790382857602547, 0.637830111602797, 0.9059239719917671, 0.7604489387967616], [0.18928682432595412, 0.686827774725612, 0.5369298462241376, 0.8450375399738642]]"
+    }
+  },
+  {
+    "prompt": "Question: What observable parameters define this lesion?\n\nAnswer:",
+    "chosen": "Mild widening of posterior cingulate and parieto-occipital sulci.",
+    "rejected": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex. Mild widening of posterior cingulate and parieto-occipital sulci.",
+    "metadata": {
+      "question_id": "What observable parameters define this lesion?",
+      "variation_id": 2,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_90.png",
+      "bbox": "[[0.05328962087731014, 0.4813028039462883, 0.3310735802909566, 0.6923008986377982], [0.6811123374449461, 0.5011577120378344, 0.963232974271579, 0.6960846506717834], [0.24570297239489558, 0.689631667629935, 0.7436635499236034, 0.842946529042629]]"
+    }
+  },
+  {
+    "prompt": "Question: What visual elements are distinctive to this lesion?\n\nAnswer:",
+    "chosen": "N/A",
+    "rejected": "Substantial widening of temporal sulci, substantial sulcal widening of posterior cingulate and parieto-occipital sulci, substantial gyral atrophy.",
+    "metadata": {
+      "question_id": "What visual elements are distinctive to this lesion?",
+      "variation_id": 3,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_67.png",
+      "bbox": "[[0.042551557382490654, 0.4905348490621664, 0.2869118232367566, 0.6746636759286019], [0.7293002558476741, 0.584606108482555, 0.9432287511797535, 0.718337254706426], [0.5185810166522393, 0.5946555609330474, 0.7677198622729519, 0.7307416368461744], [0.20524023330576735, 0.5902851041204835, 0.4782467893998547, 0.7479167108659232], [0.27287775101987727, 0.7308857768876211, 0.7304718133283573, 0.8974154251663612]]"
+    }
+  },
+  {
+    "prompt": "Question: How would you express the lesion's physical attributes?\n\nAnswer:",
+    "chosen": "Mild atrophy: opening of sulci, enlarged lateral ventricular body width.",
+    "rejected": "Mild atrophy opening of sulci, enlarged lateral ventricular body width.",
+    "metadata": {
+      "question_id": "How would you express the lesion's physical attributes?",
+      "variation_id": 1,
+      "scores": {
+        "helpful": 0.8,
+        "honest": 0.8,
+        "harmless": 0.8,
+        "composite": 0.8000000000000002
+      },
+      "language": "en",
+      "image_path": "images\\img_97.png",
+      "bbox": "[[0.2164424796305522, 0.47181850216124877, 0.46624217798665696, 0.7229579096964535]]"
+    }
+  }
+]
