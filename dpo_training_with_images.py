@@ -202,7 +202,7 @@ if __name__ == "__main__":
 
     print("Mapping dataset with multimodal processor (this may take time)...")
     # Remove original columns to avoid conflicts — we'll keep chosen/rejected as text fields in new columns
-    dataset = dataset.map(multimodal_map, remove_columns=dataset.column_names, num_proc=1)
+    dataset = dataset.map(multimodal_map, remove_columns=dataset.column_names)
     print("Mapping done. Dataset columns:", dataset.column_names)
 
     # -------------------------
