@@ -16,9 +16,6 @@ from transformers import Qwen2_5_VLForConditionalGeneration, Qwen2_5_VLProcessor
 from peft import LoraConfig
 from trl import DPOTrainer, DPOConfig
 
-from qwen_vl_utils import process_vision_info
-
-
 # -------------------------
 # Arg parsing
 # -------------------------
@@ -63,33 +60,6 @@ def parse_bboxes(bbox_field: Any) -> List[List[float]]:
     if isinstance(bbox_field, (list, tuple)):
         return list(bbox_field)
     return []
-
-
-# -------------------------
-# Load dataset JSON into HuggingFace Dataset
-# -------------------------
-def load_json_dataset(json_path: str, percentage: float = 1.0, sanity_check=False) -> Dataset:
-    with open(json_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    if not isinstance(data, list) or len(data) == 0:
-        raise ValueError("Dataset JSON must be a non-empty list of records.")
-
-    n = len(data)
-    take = int(round(n * percentage))
-    if percentage < 1.0:
-        random.seed(args.randomseed)
-        data = random.sample(data, take)
-    else:
-        data = data[:take]
-
-    if sanity_check:
-        data = data[:min(1000, len(data))]
-
-    for ex in data:
-        if "metadata" not in ex:
-            ex["metadata"] = {}
-    return Dataset.from_list(data)
-
 
 # -------------------------
 # Collator — loads images on the fly
@@ -181,6 +151,31 @@ class QwenDPOCollator:
             "pixel_values": prompt_inputs["pixel_values"],
             "image_grid_thw": prompt_inputs["image_grid_thw"],
         }
+    
+# -------------------------
+# Load dataset JSON into HuggingFace Dataset
+# -------------------------
+def load_json_dataset(json_path: str, percentage: float = 1.0, sanity_check=False) -> Dataset:
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    if not isinstance(data, list) or len(data) == 0:
+        raise ValueError("Dataset JSON must be a non-empty list of records.")
+
+    n = len(data)
+    take = int(round(n * percentage))
+    if percentage < 1.0:
+        random.seed(args.randomseed)
+        data = random.sample(data, take)
+    else:
+        data = data[:take]
+
+    if sanity_check:
+        data = data[:min(1000, len(data))]
+
+    for ex in data:
+        if "metadata" not in ex:
+            ex["metadata"] = {}
+    return Dataset.from_list(data)
 
 # -------------------------
 # Main
@@ -212,26 +207,23 @@ if __name__ == "__main__":
         # metadata may include image_path and bbox
         meta = example.get("metadata", {}) or {}
         image_path = meta.get("image_path", None)
+        bbox =  meta.get("bbox", None)
 
+        if bbox:
+            prompt = prompt.rstrip() + f"\n\nFocus on region: {bbox}"
         # Resolve relative path using dataset file base dir if necessary
         if image_path:
             image_path = image_path.replace("\\", os.sep).replace("/", os.sep)
-            if not os.path.isabs(image_path):
-                base_dir = os.path.dirname(os.path.abspath(args.dataset))
-                candidate = os.path.join(base_dir, image_path)
-                if os.path.exists(candidate):
-                    image_path = candidate
 
         # store images as a list of strings (paths). DPOTrainer will call the processor later
-        images = [image_path] if image_path else []
+        images = [Image.open(image_path).convert("RGB")] if image_path else []
 
         # return only the expected columns (avoid carrying heavy objects)
         return {
-            "prompt": prompt,
-            "chosen": str(chosen),
-            "rejected": str(rejected),
+            "prompt": [{"content": [{"text": None, "type": "image"}, {"text": prompt,"type": "text"}],"role": "user"}],
+            "chosen": [{"content": [{"text": str(chosen),"type": "text"}],"role": "user"}],
+            "rejected": [{"content": [{"text": str(rejected),"type": "text"}],"role": "user"}],
             "images": images,
-            "metadata": meta,
         }
 
     print("Normalizing dataset to TRL schema...")
@@ -240,7 +232,9 @@ if __name__ == "__main__":
     print("After normalization — example keys:", dataset.column_names)
 
     print("Loading processor & model...")
-    processor = Qwen2_5_VLProcessor.from_pretrained(args.base_model)
+    MIN_PIXELS = 256 * 28 * 28
+    MAX_PIXELS = 1280 * 28 * 28
+    processor = Qwen2_5_VLProcessor.from_pretrained(args.base_model, min_pixels=MIN_PIXELS, max_pixels=MAX_PIXELS)
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         args.base_model,
         device_map="auto",
@@ -317,7 +311,6 @@ if __name__ == "__main__":
     )
 
     print("Initializing DPOTrainer...")
-    data_collator = QwenDPOCollator(processor, args.max_prompt_length, args.max_length)
     dpo_trainer = DPOTrainer(
         model=model,
         args=dpo_config,
@@ -325,7 +318,6 @@ if __name__ == "__main__":
         eval_dataset=eval_dataset,
         processing_class=processor,
         peft_config=peft_config,
-        # data_collator=data_collator,
     )
 
     print("Starting training...")

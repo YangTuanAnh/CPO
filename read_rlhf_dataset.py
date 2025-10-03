@@ -4,7 +4,6 @@ import random
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 import os
-import base64
 from PIL import Image
 import io
 
@@ -155,7 +154,7 @@ class RLHFDatasetProcessor:
                                     # Get the original question
                                     q_col = f'Q{question_num}'
                                     if q_col in row.index and pd.notna(row[q_col]):
-                                        prompt = f"Question: {row[q_col]}\n\nAnswer:"
+                                        prompt = row[q_col]
                                         
                                         pairs.append({
                                             'prompt': prompt,
@@ -188,7 +187,7 @@ class RLHFDatasetProcessor:
             # Create pairs from main question and its variations
             for i, variation in enumerate(qa_item.variations):
                 # Create prompt for the main question
-                prompt = f"Question: {qa_item.question}\n\nAnswer:"
+                prompt = qa_item.question
                 
                 # Get ratings for this variation
                 helpful_key = f'variation_{i+1}_helpful'
@@ -270,17 +269,19 @@ class RLHFDatasetProcessor:
                         for pair in pairs:
                             pair['metadata']['language'] = language
                             if image_path:
-                                pair['metadata']['image_path'] = image_path
+                                pair['image'] = image_path
                             if bbox_coords:
                                 pair['metadata']['bbox'] = bbox_coords
+                                pair['prompt'] = pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
                         all_pairs.extend(pairs)
 
                     for pair in rating_pairs:
                         pair['metadata']['language'] = language
                         if image_path:
-                            pair['metadata']['image_path'] = image_path
+                            pair['image'] = image_path
                         if bbox_coords:
                             pair['metadata']['bbox'] = bbox_coords
+                            pair['prompt'] = pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
                     all_pairs.extend(rating_pairs)
 
                     if qa_items or rating_pairs:
@@ -359,7 +360,7 @@ def main():
         
         # Check rating distribution
         ratings = [pair['metadata']['scores']['composite'] for pair in pairs]
-        print(f"Rating distribution:")
+        print("Rating distribution:")
         print(f"  Min: {min(ratings):.3f}")
         print(f"  Max: {max(ratings):.3f}")
         print(f"  Mean: {sum(ratings)/len(ratings):.3f}")
