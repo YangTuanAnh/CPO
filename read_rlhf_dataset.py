@@ -251,7 +251,8 @@ class RLHFDatasetProcessor:
                 # Save image if present
                 image_path = None
                 if "image" in row and pd.notna(row["image"]):
-                    image_path = self._save_image(row["image"], idx)
+                    self._save_image(row["image"], idx)
+                    image_path = f"img_{idx}.png"
 
                 # Extract bbox if present
                 bbox_coords = None
@@ -272,7 +273,7 @@ class RLHFDatasetProcessor:
                                 pair['image'] = image_path
                             if bbox_coords:
                                 pair['metadata']['bbox'] = bbox_coords
-                                pair['prompt'] = pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
+                                pair['prompt'] = "<image>\n" + pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
                         all_pairs.extend(pairs)
 
                     for pair in rating_pairs:
@@ -281,7 +282,7 @@ class RLHFDatasetProcessor:
                             pair['image'] = image_path
                         if bbox_coords:
                             pair['metadata']['bbox'] = bbox_coords
-                            pair['prompt'] = pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
+                            pair['prompt'] = "<image>\n" + pair['prompt'] + f"\n\nFocus on this region: {bbox_coords}"
                     all_pairs.extend(rating_pairs)
 
                     if qa_items or rating_pairs:
