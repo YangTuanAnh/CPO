@@ -334,7 +334,7 @@ def main():
     
     # Process dataset (you can specify sample_size for testing)
     # For now, process only English to avoid too many pairs
-    pairs = processor.process_dataset(sample_size=1000, languages=['en'])  # Process first 1000 rows for testing
+    pairs = processor.process_dataset(sample_size=3000, languages=['en'])  # Process first 1000 rows for testing
     
     if pairs:
         # Save full dataset

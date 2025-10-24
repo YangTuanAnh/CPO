@@ -1,0 +1,372 @@
+[
+  {
+    "image": "img_69.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nFind the region of infection"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.5222657402173473, 0.2481441707434928, 0.842376449525486, 0.3980127963232587], [0.16301418976189005, 0.25002529293053555, 0.44288885492765556, 0.3757427629913154], [0.030502594574938667, 0.4523697573248856, 0.31298499343665115, 0.5780895601675443], [0.6605733336592295, 0.4646951762185052, 0.9318049597343976, 0.6003431511595725], [0.06735893933255675, 0.6297278876818887, 0.31742646195162033, 0.748660157985648], [0.5325731595885544, 0.6349169828732704, 0.9095632895768115, 0.8096353123158353]]"
+      },
+      {
+        "from": "human",
+        "value": "What morphological details can you observe in this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "How would you interpret the lesion's grade?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 0, Koedam = 0"
+      },
+      {
+        "from": "human",
+        "value": "What extent of disease are we dealing with?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Non-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDefine the disease area"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.5086385545158651, 0.24012356358609332, 0.805439854963716, 0.38257528505867866], [0.06794627459016114, 0.36656554512034273, 0.3392979773461013, 0.5412538584880117], [0.676029641768652, 0.38729404535116485, 0.9402827925624583, 0.5138592517150885], [-0.0024511985578856907, 0.5575267370217105, 0.2601979603112066, 0.6753722423704258], [0.7547519413451544, 0.5652558491296412, 1.0034812882655693, 0.7212180193140111]]"
+      },
+      {
+        "from": "human",
+        "value": "How would you summarize the lesion's visual features?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mild atrophy, opening of sulci."
+      },
+      {
+        "from": "human",
+        "value": "How would you frame the lesion's severity classification?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA=1"
+      },
+      {
+        "from": "human",
+        "value": "How substantial is this illness?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Mild-Demetia)"
+      }
+    ]
+  },
+  {
+    "image": "img_77.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nRecognize illness area"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.6185712976003047, 0.5775543983458197, 0.8700200812939037, 0.7528649065773217], [0.2719718856699822, 0.7123545741110598, 0.7137389610375706, 0.8592237253062278]]"
+      },
+      {
+        "from": "human",
+        "value": "How would you record the physical manifestation of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mild atrophy substantial widening of sulci. Mild sulcal widening, mild gyral atrophy."
+      },
+      {
+        "from": "human",
+        "value": "How would you frame the lesion's severity classification?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 1, Koedam = 1"
+      },
+      {
+        "from": "human",
+        "value": "What's the clinical severity of this disease state?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Mild-Demetia)"
+      }
+    ]
+  },
+  {
+    "image": "img_84.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHighlight the disease location"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.04185293316623704, 0.4951728949153304, 0.2805550710739083, 0.6781846557010558], [0.7314803469589456, 0.5816145277245591, 0.9401973655206466, 0.7190899674131551], [0.5055400888248276, 0.5962377790914525, 0.7782420850576253, 0.7300917223657994], [0.2105213293102062, 0.5967000747455038, 0.4745040706283116, 0.7490916057991193], [0.26522144887200905, 0.7316882811785861, 0.7420373278987306, 0.8986681841494979]]"
+      },
+      {
+        "from": "human",
+        "value": "How would you delineate the appearance of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "Substantial widening of temporal sulci, substantial sulcal widening of posterior cingulate and parieto-occipital sulci, substantial gyral atrophy."
+      },
+      {
+        "from": "human",
+        "value": "How advanced is this lesion on the grading scale?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 2, Koedam = 2"
+      },
+      {
+        "from": "human",
+        "value": "What's the potency of this disease?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Moderate-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nMark the infected part"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.4996169857203323, 0.2398599683829622, 0.8119194865346331, 0.386774709575723], [0.19035690479878073, 0.25487324409297946, 0.41931813691925357, 0.3940767126167212], [0.05340990105460919, 0.5771196682859506, 0.301004146369129, 0.6885250156087874], [0.6603179138323331, 0.5843675483132543, 0.9364849721081725, 0.7434549242708212], [0.35252748157014413, 0.6098528438182972, 0.6322680100701564, 0.7189202539609685]]"
+      },
+      {
+        "from": "human",
+        "value": "How would you annotate the visual details of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "No atrophy, no widening of the temporal horn of lateral ventricle. No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "How would you formulate the lesion's grade assessment?"
+      },
+      {
+        "from": "gpt",
+        "value": "MTA = 0, GCA = 0, Koedam = 0"
+      },
+      {
+        "from": "human",
+        "value": "What's the clinical gravity of this health issue?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Non-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_73.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nMark the infected part"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.4830340110040252, 0.23560797345364684, 0.8280413012069394, 0.3802231053415967], [0.17967686064893068, 0.25715362737413733, 0.4247754613903348, 0.39452731279615394], [0.03861519492833236, 0.5791582402344252, 0.3166568968412519, 0.6863670851998448], [0.6583423944491371, 0.581313867043354, 0.9319736057605726, 0.7497931925805502], [0.3475457403643642, 0.603409447190409, 0.6422669846538114, 0.7134864387402886]]"
+      },
+      {
+        "from": "human",
+        "value": "What is the visual composition of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "No atrophy, no widening of the temporal horn of lateral ventricle. No cortical atrophy, no brain parenchyma atrophy. No interventricular space enlargement. No posterior atrophy, no posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "What severity class does this lesion belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": "MTA = 0, GCA = 0, Koedam = 0"
+      },
+      {
+        "from": "human",
+        "value": "How consequential is this illness?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Non-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDetect the diseased region"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.05768526457422537, 0.41112848911892175, 0.35026256377841225, 0.6582413302863546], [0.6892150788501965, 0.41864111916659863, 0.9711437866608411, 0.6552755226968309], [0.14149065991982118, 0.6597114748280054, 0.5342957818715292, 0.790699581113985], [0.4652029547256528, 0.6572360739239173, 0.8663813648729196, 0.7975321831111286], [0.13502632087318364, 0.7367958986314906, 0.2774721486568282, 0.7914933520345925]]"
+      },
+      {
+        "from": "human",
+        "value": "What is the visual identity of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "How would you codify the lesion's grade level?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 0, Koedam = 0"
+      },
+      {
+        "from": "human",
+        "value": "What's the magnitude of this clinical condition?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Non-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_80.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nLocate the affected area"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.21977332300469615, 0.475520579270077, 0.4695882171591352, 0.7271919769872122]]"
+      },
+      {
+        "from": "human",
+        "value": "What visual markers are present in this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mild atrophy opening of sulci, enlarged lateral ventricular body width."
+      },
+      {
+        "from": "human",
+        "value": "What is the progression grade of this observed lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 1"
+      },
+      {
+        "from": "human",
+        "value": "What's the extent of the disease?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Mild-Demetia)"
+      }
+    ]
+  },
+  {
+    "image": "img_70.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nFind the region of infection"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.5113208057617508, 0.24525545207597566, 0.8539010694865861, 0.39883047457160475], [0.17298655292717974, 0.2585662531461522, 0.4326471247743849, 0.3729495550642477], [0.04115802539887929, 0.45098736623796276, 0.3088087808367757, 0.5727760872739914], [0.6659378619503847, 0.4607557506883251, 0.9301132684089396, 0.6018671431828424], [0.08216753090853154, 0.6278385051196189, 0.30463451045290013, 0.7423326535551448], [0.5383171562083913, 0.6330520367335525, 0.9058074848861253, 0.8080543803890338]]"
+      },
+      {
+        "from": "human",
+        "value": "What physical details are apparent in this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "No cortical atrophy, no posterior atrophy, no posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "What grade characterization best describes this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 0, Koedam = 0"
+      },
+      {
+        "from": "human",
+        "value": "How severe is the disease?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Non-Dementia)"
+      }
+    ]
+  },
+  {
+    "image": "img_60.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nFind the diseased spot"
+      },
+      {
+        "from": "gpt",
+        "value": "[[0.31109396715685916, 0.06924820415517292, 0.5038059245656624, 0.3031625328208435], [0.11512606674323916, 0.260622636554098, 0.2823607005621333, 0.5936289253773016], [0.26194892857780466, 0.6658142584221639, 0.43246680215611805, 0.9141280467541171]]"
+      },
+      {
+        "from": "human",
+        "value": "What is the visual identity of this lesion?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mild atrophy opening of sulci, mild shrinkage of cerebral cortex. Mild widening of posterior cingulate and parieto-occipital sulci."
+      },
+      {
+        "from": "human",
+        "value": "How significant is this lesion based on grading criteria?"
+      },
+      {
+        "from": "gpt",
+        "value": "GCA = 1, Koedam = 1"
+      },
+      {
+        "from": "human",
+        "value": "How significant is the disease burden?"
+      },
+      {
+        "from": "gpt",
+        "value": "Status (Mild-Demetia)"
+      }
+    ]
+  }
+]
